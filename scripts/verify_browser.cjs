@@ -1,0 +1,78 @@
+const { chromium } = require('playwright');
+const fs = require('fs');
+const path = require('path');
+const { pathToFileURL } = require('url');
+const assert = require('assert').strict;
+
+(async () => {
+  const out = path.resolve('tmp/browser-qa');
+  fs.mkdirSync(out, { recursive: true });
+  const browser = await chromium.launch({headless:true, executablePath:process.env.CALCULUS_BROWSER});
+  const context = await browser.newContext({viewport:{width:1440,height:1100}});
+  const page = await context.newPage();
+  const errors = [];
+  page.on('pageerror',error=>errors.push(error.message));
+  const lesson = pathToFileURL(path.resolve('site/sections/2-3/index.html')).href;
+  await page.goto(lesson);
+  await page.waitForSelector('#example-11');
+  assert.equal(await page.locator('html').getAttribute('lang'),'en');
+  assert.equal(await page.locator('.topic').count(),8);
+  assert.equal(await page.locator('.questions-group .question-card').count(),11);
+  assert.equal(await page.locator('.exercise-card').count(),64);
+  assert.equal(await page.locator('#example-1 details.solution').getAttribute('open'),'');
+  assert.equal(await page.locator('.exercise-card details.solution[open]').count(),0);
+  assert.equal(await page.locator('.unsupported-math').count(),0);
+  assert.equal(await page.locator('#math-warning').isVisible(),false);
+  await page.locator('img').evaluateAll(imgs=>imgs.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>Array.from(document.images).every(img=>img.complete&&img.naturalWidth>0));
+  await page.screenshot({path:path.join(out,'desktop-en.png')});
+
+  await page.locator('#exercise-search').fill('33-34');
+  await page.locator('#exercise-33 summary').click();
+  await page.locator('[data-complete="limit-laws"]').check();
+  await page.locator('[data-lang="zh"]').click();
+  assert.equal(await page.locator('html').getAttribute('lang'),'zh-Hans');
+  assert.equal(await page.locator('#exercise-search').inputValue(),'33-34');
+  assert.equal(await page.locator('#exercise-33 details.solution').getAttribute('open'),'');
+  assert.equal(await page.locator('[data-complete="limit-laws"]').isChecked(),true);
+  assert.equal(await page.locator('.exercise-card:visible').count(),2);
+  assert.equal(await page.locator('#exercise-33 .math-data-table tr').count(),7);
+  await page.locator('#exercise-33').scrollIntoViewIfNeeded();
+  await page.screenshot({path:path.join(out,'exercise33-zh.png')});
+
+  await page.locator('#example-1 [data-exercise-link="2"]').click();
+  assert.equal(await page.locator('#exercise-2').isVisible(),true);
+  await page.locator('#home-link').click();
+  assert.equal(await page.locator('html').getAttribute('lang'),'zh-Hans');
+  await page.locator('[data-language="en"]').click();
+  await page.locator('a[href*="sections/2-3"]').first().click();
+  await page.waitForSelector('#example-11');
+  assert.equal(await page.locator('html').getAttribute('lang'),'en');
+  assert.equal(await page.locator('[data-complete="limit-laws"]').isChecked(),true);
+  await page.locator('#expand-all').click();
+  assert.equal(await page.locator('.solution[open]').count(),75);
+  assert.equal(await page.locator('.unsupported-math').count(),0);
+  await page.locator('img').evaluateAll(imgs=>imgs.forEach(img=>img.loading='eager'));
+  await page.waitForFunction(()=>Array.from(document.images).every(img=>img.complete&&img.naturalWidth>0));
+  await page.locator('#exercise-52').scrollIntoViewIfNeeded();
+  await page.screenshot({path:path.join(out,'exercise52-en.png')});
+
+  await page.setViewportSize({width:390,height:844});
+  await page.goto(lesson+'?lang=zh');
+  await page.waitForSelector('#example-11');
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),true);
+  await page.screenshot({path:path.join(out,'mobile-zh.png')});
+  await page.locator('#exercise-search').fill('33');
+  await page.locator('#exercise-33 summary').click();
+  await page.locator('#exercise-33').scrollIntoViewIfNeeded();
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth+1),true);
+  await page.screenshot({path:path.join(out,'mobile-exercise33.png')});
+  await page.emulateMedia({media:'print'});
+  assert.equal(await page.locator('.unsupported-math').count(),0);
+  assert.equal(errors.length,0,errors.join('\n'));
+  const report = {passed:true,concepts:8,examples:11,exercises:64,images:await page.locator('img').count(),
+    checks:['English default','Chinese/English switching','open/filter state preserved','progress persisted','example exercise jump','home navigation language','all solutions expand','all images load','floor/cases/limits/tables render','390px mobile overflow','print media','no page errors'],errors};
+  fs.writeFileSync(path.join(out,'report.json'),JSON.stringify(report,null,2));
+  console.log(JSON.stringify(report,null,2));
+  await browser.close();
+})().catch(error=>{console.error(error);process.exit(1)});

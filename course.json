@@ -1,0 +1,28 @@
+{
+  "course": {
+    "id": "stewart-calculus-7e",
+    "title": "Stewart 微积分",
+    "en": {
+      "title": "Stewart Calculus"
+    }
+  },
+  "sections": [
+    {
+      "slug": "2-3",
+      "section": "2.3",
+      "title": "用极限定律计算极限",
+      "en": {
+        "title": "Calculating Limits Using the Limit Laws",
+        "chapter": "Chapter 2 · Limits and Derivatives"
+      },
+      "chapter": "第 2 章 · 极限与导数",
+      "counts": {
+        "concepts": 8,
+        "examples": 11,
+        "practice": 0,
+        "exercises": 64
+      },
+      "data": "content/section-2-3.json"
+    }
+  ]
+}

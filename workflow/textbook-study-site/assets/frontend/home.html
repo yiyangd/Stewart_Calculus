@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174d53">
+  <meta name="description" content="Bilingual study contents: concepts, examples, practice, and step-by-step solutions.">
+  <title>Study home</title>
+  <link rel="stylesheet" href="home.css">
+  <script id="course-data" type="application/json">__COURSE_DATA__</script>
+  <script src="home.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to study contents</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" id="home-link" aria-label="Course home">
+      <span class="brand-mark" aria-hidden="true">ƒ<span>x</span></span>
+      <span><span class="brand-title">Study notes</span><small data-i18n="brand">STUDY HOME</small></span>
+    </a>
+    <div class="language-switch" role="group" aria-label="Language / 语言">
+      <button type="button" data-language="zh" aria-pressed="false" lang="zh-Hans">中文</button>
+      <button type="button" data-language="en" class="is-active" aria-pressed="true" lang="en">English</button>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <p class="eyebrow course-title">STUDY NOTES</p>
+      <h1 id="welcome-title" data-i18n="welcome">Start here.</h1>
+      <p class="intro" data-i18n="intro">Choose a section to study key concepts, practise, and follow step-by-step solutions.</p>
+    </section>
+    <section class="contents" aria-labelledby="contents-title">
+      <h2 id="contents-title" data-i18n="contents">Study contents</h2>
+      <div id="course-contents"></div>
+      <p id="home-empty" hidden data-i18n="empty">No sections are available yet.</p>
+      <p id="home-error" role="alert" hidden></p>
+    </section>
+  </main>
+  <footer><span class="course-title">Study notes</span><span data-i18n="footer">Bilingual study notes</span></footer>
+  <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+</body>
+</html>

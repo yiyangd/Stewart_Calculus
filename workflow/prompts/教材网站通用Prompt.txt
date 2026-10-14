@@ -1,0 +1,19 @@
+使用项目内 workflow/textbook-study-site/SKILL.md，把下面 Stewart 教材范围做成完整双语学习网站。先读 references/stewart-project.md、content-schema.md 和 quality-review.md。
+
+教材：James Stewart Calculus Early Transcendentals, 7th Edition 2012.pdf
+参考答案：Stewart-7E-solutions.pdf
+制作范围：【填写章节，例如第 2.4 节；或指定完整题目范围】
+讲义：【有则填写；没有则仅依据教材】
+课程名称：Stewart Calculus · Early Transcendentals · 7th Edition
+输出位置：当前 Stewart-Calculus 项目；沿用 course.json、content/、site/、project-docs/。
+发布目标：【本地网页；或填写当前已授权仓库/现有网站】
+
+沿用 Pre-Calculus 11 的奶油色与深青色学习页，按“知识点 → 教材原例题 → 相关节后习题”组织。教材真的存在 Practice Problem 时才按原文纳入，不虚构教材配套练习。每个 Example 需单独对应真实节后题号，说明同型、综合或拓展及具体方法理由；没有直接同型题时如实标记。每道 Exercise 只建立一个条目，可以关联多个知识点或例题。
+
+先对教材原始页面清点本节全部正文 Example、Practice（如有）、Exercise、小问和原图，确定章节边界，保存独立 coverage，不能从最终 JSON 反推期望题量。记录真实 PDF 页码和可见印刷页码。参考答案先确认版本、节号、题号和原式，再用于核对；答案书缺题或原文疑似错误需留下具体记录。
+
+保留每题原表达式、全部条件和小问，给出清楚的第一步、第二步、第三步及必要运算，复杂题按实际推导增加步骤，不用“类似上一题”代替解答。英文依据教材，中文保持同一数学含义。逐题核对公式、根式、方向、定义域、左右极限、商法则条件、特殊参数及答案。答案书省略的步骤需补齐，以独立计算和复审核验。
+
+默认英语，可切换中文；切换保留筛选、展开与进度。例题默认展开，Exercises 默认收起。首页列已完成章节，知识点有统一方法、易错点和全类题号链接；每例题可直接跳到对应 Exercises。题号/范围/知识点筛选、手机、必要原图、打印和独立进度均需检查。
+
+只在来源复核与数学复核实际完成后设置审核标志，运行结构、覆盖和构建检查，再做浏览器验收。新书独立于 Precalc，不覆盖其内容、目录、网址或进度。不将原教材/答案 PDF、整页图片、本机路径或凭据放入公开站点。按本次会话授权交付或发布，给出入口、实际覆盖数量及未核实的具体缺项。

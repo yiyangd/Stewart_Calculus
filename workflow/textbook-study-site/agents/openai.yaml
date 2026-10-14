@@ -1,0 +1,4 @@
+interface:
+  display_name: "教材双语学习网站"
+  short_description: "按教材与讲义制作完整双语学习网页，含全量题目与分步解析"
+  default_prompt: "使用 $textbook-study-site 把指定教材章节制作成默认英语、可切换中文的完整学习网站。"

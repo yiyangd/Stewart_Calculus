@@ -1,0 +1,17 @@
+{
+  "expectedExamples": ["example-1", "example-2", "example-3", "example-4", "example-5", "example-6", "example-7", "example-8", "example-9", "example-10", "example-11"],
+  "expectedPractice": [],
+  "expectedExercises": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64],
+  "expectedSubparts": {
+    "example-1": ["a","b","c"], "example-2": ["a","b"],
+    "exercise-1": ["a","b","c","d","e","f"],
+    "exercise-2": ["a","b","c","d","e","f"],
+    "exercise-10": ["a","b"], "exercise-33": ["a","b","c"], "exercise-34": ["a","b","c"],
+    "exercise-47": ["a","b.i","b.ii","b.iii","b.iv"],
+    "exercise-48": ["a","b","c"], "exercise-49": ["a.i","a.ii","b","c"],
+    "exercise-50": ["a.i","a.ii","a.iii","a.iv","a.v","a.vi","b"],
+    "exercise-51": ["a.i","a.ii","a.iii","b.i","b.ii","c"],
+    "exercise-52": ["a","b.i","b.ii","b.iii","b.iv","c"], "exercise-58": ["a","b"]
+  },
+  "inventoryBasis": "Independently counted from rendered textbook PDF pages 131–140 before writing solutions. Section 2.3 begins at printed p.99; the exercises end at No.64 on printed p.108 before the 2.4 heading. No separate Practice Problems appear. Nested Roman-numeral subparts are separately inventoried."
+}

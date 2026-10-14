@@ -1,0 +1,1327 @@
+[
+  {
+    "number": 33,
+    "prompt": "(a) 将 $f(x)=x/(\\sqrt{1+3x}-1)$ 作图，估计 $\\lim_{x\\to0}\\frac{x}{\\sqrt{1+3x}-1}$。(b) 列出 $x$ 接近 $0$ 时 $f(x)$ 的数值表，猜测极限。(c) 用极限定律证明猜测正确。",
+    "concept": [
+      "rationalization",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "观察图像 (a)",
+        "body": "定义域为 $x\\ge-1/3$ 且 $x\\ne0$。解答图在 $x=0$ 处留下空心点；从两侧靠近该点时，高度约为 $0.667$，据此估计极限为 $2/3$。"
+      },
+      {
+        "title": "数值表 (b)",
+        "body": "对 $x\\ne0$，用等价式 $(\\sqrt{1+3x}+1)/3$ 计算可避免两个相近数相减：$\\begin{array}{r|r}x&f(x)\\\\\\hline -0.1 & 0.6122200\\\\-0.01 & 0.6616286\\\\-0.001 & 0.6661663\\\\0.001 & 0.6671663\\\\0.01 & 0.6716297\\\\0.1 & 0.7133918\\end{array}$。左右两列趋势都指向 $0.666666\\ldots$。"
+      },
+      {
+        "title": "乘以共轭 (c)",
+        "body": "当 $x\\ne0$ 时，$\\frac{x}{\\sqrt{1+3x}-1}=\\frac{x(\\sqrt{1+3x}+1)}{(1+3x)-1}=\\frac{\\sqrt{1+3x}+1}{3}$。只在去心邻域约去 $x$，无须定义原函数在 $0$ 处的值。"
+      },
+      {
+        "title": "应用极限定律 (c)",
+        "body": "由和、常数倍及平方根定律，$\\lim_{x\\to0}f(x)=(\\sqrt{1+3\\cdot0}+1)/3=2/3$，证实图像和数值的猜测。"
+      }
+    ],
+    "answer": "(a) 约 $0.667$；(b) 猜测 $2/3$；(c) 精确极限为 $2/3$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "(a) Estimate the value of $\\lim_{x\\to0}\\frac{x}{\\sqrt{1+3x}-1}$ by graphing the function $f(x)=x/(\\sqrt{1+3x}-1)$. (b) Make a table of values of $f(x)$ for $x$ close to $0$ and guess the value of the limit. (c) Use the Limit Laws to prove that your guess is correct.",
+      "steps": [
+        {
+          "title": "Read the graph (a)",
+          "body": "The domain is $x\\ge-1/3$ with $x\\ne0$. The solution graph leaves an open point at $x=0$; from either side its height approaches about $0.667$, suggesting a limit of $2/3$."
+        },
+        {
+          "title": "Make a table (b)",
+          "body": "For $x\\ne0$, evaluate the equivalent expression $(\\sqrt{1+3x}+1)/3$ to avoid subtracting nearly equal numbers: $\\begin{array}{r|r}x&f(x)\\\\\\hline -0.1 & 0.6122200\\\\-0.01 & 0.6616286\\\\-0.001 & 0.6661663\\\\0.001 & 0.6671663\\\\0.01 & 0.6716297\\\\0.1 & 0.7133918\\end{array}$. Values on both sides approach $0.666666\\ldots$."
+        },
+        {
+          "title": "Rationalize (c)",
+          "body": "For $x\\ne0$, $\\frac{x}{\\sqrt{1+3x}-1}=\\frac{x(\\sqrt{1+3x}+1)}{(1+3x)-1}=\\frac{\\sqrt{1+3x}+1}{3}$. Cancel $x$ only in a punctured neighborhood; the original function need not have a value at $0$."
+        },
+        {
+          "title": "Apply the Limit Laws (c)",
+          "body": "The sum, constant-multiple, and square-root laws give $\\lim_{x\\to0}f(x)=(\\sqrt{1+3\\cdot0}+1)/3=2/3$, confirming the graphical and numerical estimates."
+        }
+      ],
+      "answer": "(a) About $0.667$; (b) conjecture $2/3$; (c) the exact limit is $2/3$."
+    },
+    "subpartIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-33-solution.png"
+  },
+  {
+    "number": 34,
+    "prompt": "(a) 用 $f(x)=\\frac{\\sqrt{3+x}-\\sqrt3}{x}$ 的图像估计 $\\lim_{x\\to0}f(x)$，保留两位小数。(b) 用数值表估计极限，保留四位小数。(c) 用极限定律求精确极限。",
+    "concept": [
+      "rationalization",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "读图 (a)",
+        "body": "函数在 $x\\ge-3$ 且 $x\\ne0$ 上有定义。解答图显示两侧曲线在 $x=0$ 附近趋近 $0.289$；保留两位小数得到 $0.29$。"
+      },
+      {
+        "title": "数值表 (b)",
+        "body": "使用等价式 $1/(\\sqrt{3+x}+\\sqrt3)$ 计算：$\\begin{array}{r|r}x&f(x)\\\\\\hline -0.01 & 0.2889161\\\\-0.001 & 0.2886992\\\\-0.0001 & 0.2886775\\\\0.0001 & 0.2886727\\\\0.001 & 0.2886511\\\\0.01 & 0.2884350\\end{array}$。两侧值接近 $0.288675\\ldots$，四位小数为 $0.2887$。"
+      },
+      {
+        "title": "共轭化简 (c)",
+        "body": "对 $x\\ne0$，$\\frac{\\sqrt{3+x}-\\sqrt3}{x}=\\frac{(3+x)-3}{x(\\sqrt{3+x}+\\sqrt3)}=\\frac1{\\sqrt{3+x}+\\sqrt3}$。"
+      },
+      {
+        "title": "求精确极限 (c)",
+        "body": "化简后的分母极限为 $2\\sqrt3\\ne0$，商与根式定律给出 $\\lim_{x\\to0}f(x)=1/(2\\sqrt3)=\\sqrt3/6$。"
+      }
+    ],
+    "answer": "(a) $0.29$；(b) $0.2887$；(c) $\\sqrt3/6$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "(a) Use a graph of $f(x)=\\frac{\\sqrt{3+x}-\\sqrt3}{x}$ to estimate the value of $\\lim_{x\\to0}f(x)$ to two decimal places. (b) Use a table of values of $f(x)$ to estimate the limit to four decimal places. (c) Use the Limit Laws to find the exact value of the limit.",
+      "steps": [
+        {
+          "title": "Read the graph (a)",
+          "body": "The function is defined for $x\\ge-3$ with $x\\ne0$. The solution graph approaches about $0.289$ on both sides of $x=0$, giving $0.29$ to two decimal places."
+        },
+        {
+          "title": "Make a table (b)",
+          "body": "Use the equivalent expression $1/(\\sqrt{3+x}+\\sqrt3)$ to calculate: $\\begin{array}{r|r}x&f(x)\\\\\\hline -0.01 & 0.2889161\\\\-0.001 & 0.2886992\\\\-0.0001 & 0.2886775\\\\0.0001 & 0.2886727\\\\0.001 & 0.2886511\\\\0.01 & 0.2884350\\end{array}$. Both sides approach $0.288675\\ldots$, or $0.2887$ to four decimal places."
+        },
+        {
+          "title": "Rationalize (c)",
+          "body": "For $x\\ne0$, $\\frac{\\sqrt{3+x}-\\sqrt3}{x}=\\frac{(3+x)-3}{x(\\sqrt{3+x}+\\sqrt3)}=\\frac1{\\sqrt{3+x}+\\sqrt3}$."
+        },
+        {
+          "title": "Find the exact limit (c)",
+          "body": "The simplified denominator tends to $2\\sqrt3\\ne0$. The quotient and root laws give $\\lim_{x\\to0}f(x)=1/(2\\sqrt3)=\\sqrt3/6$."
+        }
+      ],
+      "answer": "(a) $0.29$; (b) $0.2887$; (c) $\\sqrt3/6$."
+    },
+    "subpartIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-34-solution.png"
+  },
+  {
+    "number": 35,
+    "prompt": "用夹逼定理证明 $\\lim_{x\\to0}(x^2\\cos20\\pi x)=0$。在同一坐标系中画出 $f(x)=-x^2$、$g(x)=x^2\\cos20\\pi x$ 和 $h(x)=x^2$ 以说明结论。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "找到上下界",
+        "body": "由 $-1\\le\\cos20\\pi x\\le1$，乘以非负的 $x^2$ 得 $-x^2\\le x^2\\cos20\\pi x\\le x^2$，即 $f(x)\\le g(x)\\le h(x)$。"
+      },
+      {
+        "title": "两边趋向同一值",
+        "body": "多项式极限定律给出 $\\lim_{x\\to0}(-x^2)=0=\\lim_{x\\to0}x^2$。夹逼定理因此给出 $\\lim_{x\\to0}g(x)=0$。"
+      },
+      {
+        "title": "解释同屏图像",
+        "body": "解答图中，振荡曲线 $g$ 始终夹在两条抛物线之间。虽然余弦在区间内振荡，两条包络曲线都在原点收拢，振幅不超过 $x^2$。"
+      }
+    ],
+    "answer": "$\\lim_{x\\to0}x^2\\cos20\\pi x=0$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Use the Squeeze Theorem to show that $\\lim_{x\\to0}(x^2\\cos20\\pi x)=0$. Illustrate by graphing the functions $f(x)=-x^2$, $g(x)=x^2\\cos20\\pi x$, and $h(x)=x^2$ on the same screen.",
+      "steps": [
+        {
+          "title": "Find bounding functions",
+          "body": "Because $-1\\le\\cos20\\pi x\\le1$, multiplying by the nonnegative number $x^2$ gives $-x^2\\le x^2\\cos20\\pi x\\le x^2$, or $f(x)\\le g(x)\\le h(x)$."
+        },
+        {
+          "title": "Both bounds approach the same value",
+          "body": "The polynomial limit laws give $\\lim_{x\\to0}(-x^2)=0=\\lim_{x\\to0}x^2$. The Squeeze Theorem therefore gives $\\lim_{x\\to0}g(x)=0$."
+        },
+        {
+          "title": "Interpret the combined graph",
+          "body": "In the solution graph, the oscillating curve $g$ stays between the two parabolas. Although the cosine oscillates over the interval, both envelopes meet at the origin and its amplitude is at most $x^2$."
+        }
+      ],
+      "answer": "$\\lim_{x\\to0}x^2\\cos20\\pi x=0$."
+    },
+    "solutionImage": "assets/exercise-35-solution.png"
+  },
+  {
+    "number": 36,
+    "prompt": "用夹逼定理证明 $\\lim_{x\\to0}\\sqrt{x^3+x^2}\\,\\sin\\frac{\\pi}{x}=0$。按夹逼定理中的记号，将函数 $f,g,h$ 画在同一坐标系中以说明结论。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "确定振幅和定义域",
+        "body": "根号仅包含 $x^3+x^2$。在 $x\\ge-1$ 上，$\\sqrt{x^3+x^2}=|x|\\sqrt{1+x}\\ge0$；原振荡函数还要求 $x\\ne0$。设 $g(x)=\\sqrt{x^3+x^2}\\sin(\\pi/x)$。"
+      },
+      {
+        "title": "构造夹逼函数",
+        "body": "因为 $-1\\le\\sin(\\pi/x)\\le1$，令 $f(x)=-\\sqrt{x^3+x^2}$、$h(x)=\\sqrt{x^3+x^2}$，则对邻近 $0$ 的 $x\\ne0$ 有 $f(x)\\le g(x)\\le h(x)$。"
+      },
+      {
+        "title": "证明包络极限",
+        "body": "从左侧 $|x|=-x\\to0$，从右侧 $|x|=x\\to0$，所以 $\\lim_{x\\to0}|x|=0$。又因 $1+x\\to1>0$，平方根定律给出 $\\sqrt{1+x}\\to1$。由积定律，$\\sqrt{x^3+x^2}=|x|\\sqrt{1+x}\\to0\\cdot1=0$。因此上下界都趋零，夹逼定理得到 $\\lim_{x\\to0}g(x)=0$。"
+      },
+      {
+        "title": "解释图像",
+        "body": "解答图显示 $g$ 在两条包络线内振荡。越接近 $0$，振荡频率越高，但振幅 $|x|\\sqrt{1+x}$ 越小；空心点表示 $g(0)$ 未定义。"
+      }
+    ],
+    "answer": "极限为 $0$；上下夹逼函数为 $\\pm\\sqrt{x^3+x^2}$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Use the Squeeze Theorem to show that $\\lim_{x\\to0}\\sqrt{x^3+x^2}\\,\\sin\\frac{\\pi}{x}=0$. Illustrate by graphing the functions $f$, $g$, and $h$ (in the notation of the Squeeze Theorem) on the same screen.",
+      "steps": [
+        {
+          "title": "Identify the amplitude and domain",
+          "body": "The radical contains only $x^3+x^2$. For $x\\ge-1$, $\\sqrt{x^3+x^2}=|x|\\sqrt{1+x}\\ge0$; the oscillating function also requires $x\\ne0$. Let $g(x)=\\sqrt{x^3+x^2}\\sin(\\pi/x)$."
+        },
+        {
+          "title": "Construct the bounds",
+          "body": "Since $-1\\le\\sin(\\pi/x)\\le1$, let $f(x)=-\\sqrt{x^3+x^2}$ and $h(x)=\\sqrt{x^3+x^2}$. Then $f(x)\\le g(x)\\le h(x)$ for nonzero $x$ near $0$."
+        },
+        {
+          "title": "Find the envelope limits",
+          "body": "On the left $|x|=-x\\to0$, and on the right $|x|=x\\to0$, so $\\lim_{x\\to0}|x|=0$. Since $1+x\\to1>0$, the square-root law gives $\\sqrt{1+x}\\to1$. The product law then gives $\\sqrt{x^3+x^2}=|x|\\sqrt{1+x}\\to0\\cdot1=0$. Both bounds therefore tend to zero, and the Squeeze Theorem gives $\\lim_{x\\to0}g(x)=0$."
+        },
+        {
+          "title": "Interpret the graph",
+          "body": "The solution graph shows $g$ oscillating between its envelopes. Closer to $0$, the frequency increases but the amplitude $|x|\\sqrt{1+x}$ decreases. An open point marks the undefined value $g(0)$."
+        }
+      ],
+      "answer": "The limit is $0$; the bounding functions are $\\pm\\sqrt{x^3+x^2}$."
+    },
+    "solutionImage": "assets/exercise-36-solution.png"
+  },
+  {
+    "number": 37,
+    "prompt": "若对 $x\\ge0$ 有 $4x-9\\le f(x)\\le x^2-4x+7$，求 $\\lim_{x\\to4}f(x)$。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "计算下界极限",
+        "body": "$\\lim_{x\\to4}(4x-9)=4\\cdot4-9=7$。点 $4$ 附近的小区间满足 $x\\ge0$，故所给不等式在该邻域有效。"
+      },
+      {
+        "title": "计算上界并夹逼",
+        "body": "$\\lim_{x\\to4}(x^2-4x+7)=16-16+7=7$。上下界的极限一致，由夹逼定理得 $\\lim_{x\\to4}f(x)=7$。"
+      }
+    ],
+    "answer": "$7$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "If $4x-9\\le f(x)\\le x^2-4x+7$ for $x\\ge0$, find $\\lim_{x\\to4}f(x)$.",
+      "steps": [
+        {
+          "title": "Evaluate the lower bound",
+          "body": "$\\lim_{x\\to4}(4x-9)=4\\cdot4-9=7$. A small interval around $4$ lies in $x\\ge0$, so the given inequalities apply there."
+        },
+        {
+          "title": "Evaluate the upper bound and squeeze",
+          "body": "$\\lim_{x\\to4}(x^2-4x+7)=16-16+7=7$. Since both bounding limits agree, the Squeeze Theorem gives $\\lim_{x\\to4}f(x)=7$."
+        }
+      ],
+      "answer": "$7$."
+    }
+  },
+  {
+    "number": 38,
+    "prompt": "若对所有 $x$ 有 $2x\\le g(x)\\le x^4-x^2+2$，求 $\\lim_{x\\to1}g(x)$。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "计算两个边界极限",
+        "body": "$\\lim_{x\\to1}2x=2$；$\\lim_{x\\to1}(x^4-x^2+2)=1-1+2=2$，两个多项式都可直接代入。"
+      },
+      {
+        "title": "应用夹逼定理",
+        "body": "所给不等式在 $1$ 的邻域中成立，且上下界都趋于 $2$，因此 $g(x)$ 也趋于 $2$。"
+      }
+    ],
+    "answer": "$\\lim_{x\\to1}g(x)=2$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "If $2x\\le g(x)\\le x^4-x^2+2$ for all $x$, evaluate $\\lim_{x\\to1}g(x)$.",
+      "steps": [
+        {
+          "title": "Evaluate the two bounds",
+          "body": "$\\lim_{x\\to1}2x=2$, and $\\lim_{x\\to1}(x^4-x^2+2)=1-1+2=2$. Both are polynomial limits evaluated by substitution."
+        },
+        {
+          "title": "Apply the Squeeze Theorem",
+          "body": "The given inequalities hold near $1$, and both bounds approach $2$, so $g(x)$ also approaches $2$."
+        }
+      ],
+      "answer": "$\\lim_{x\\to1}g(x)=2$."
+    }
+  },
+  {
+    "number": 39,
+    "prompt": "证明 $\\lim_{x\\to0}x^4\\cos\\frac2x=0$。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "用余弦的有界性",
+        "body": "对于 $x\\ne0$，$-1\\le\\cos(2/x)\\le1$。乘以 $x^4\\ge0$ 后得到 $-x^4\\le x^4\\cos(2/x)\\le x^4$。"
+      },
+      {
+        "title": "让上下界同时趋零",
+        "body": "当 $x\\to0$ 时，$-x^4$ 与 $x^4$ 都趋于 $0$。由夹逼定理，原函数的极限为 $0$，无需余弦因子本身存在极限。"
+      }
+    ],
+    "answer": "$0$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Prove that $\\lim_{x\\to0}x^4\\cos\\frac2x=0$.",
+      "steps": [
+        {
+          "title": "Use the bounded cosine",
+          "body": "For $x\\ne0$, $-1\\le\\cos(2/x)\\le1$. Multiplication by $x^4\\ge0$ gives $-x^4\\le x^4\\cos(2/x)\\le x^4$."
+        },
+        {
+          "title": "Let both bounds tend to zero",
+          "body": "As $x\\to0$, both $-x^4$ and $x^4$ tend to $0$. The Squeeze Theorem gives a limit of $0$ for the product, without requiring the cosine factor to have a limit."
+        }
+      ],
+      "answer": "$0$."
+    }
+  },
+  {
+    "number": 40,
+    "prompt": "证明 $\\lim_{x\\to0^+}\\sqrt{x}\\,e^{\\sin(\\pi/x)}=0$。",
+    "concept": [
+      "squeeze",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "界定指数因子",
+        "body": "$-1\\le\\sin(\\pi/x)\\le1$，指数函数递增，故 $e^{-1}\\le e^{\\sin(\\pi/x)}\\le e$。对于 $x>0$，乘以 $\\sqrt{x}$ 不改变不等号方向。"
+      },
+      {
+        "title": "在右侧夹逼",
+        "body": "$\\sqrt{x}/e\\le\\sqrt{x}\\,e^{\\sin(\\pi/x)}\\le e\\sqrt{x}$。根式在右侧趋零：任给正数 $\\eta$，只要 $0<x<\\eta^2$ 就有 $0<\\sqrt{x}<\\eta$。所以两侧夹逼函数都趋于 $0$，由单侧夹逼定理得到结论。"
+      }
+    ],
+    "answer": "$0$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Prove that $\\lim_{x\\to0^+}\\sqrt{x}\\,e^{\\sin(\\pi/x)}=0$.",
+      "steps": [
+        {
+          "title": "Bound the exponential factor",
+          "body": "$-1\\le\\sin(\\pi/x)\\le1$, and the exponential is increasing, so $e^{-1}\\le e^{\\sin(\\pi/x)}\\le e$. For $x>0$, multiplication by $\\sqrt{x}$ preserves the inequalities."
+        },
+        {
+          "title": "Squeeze from the right",
+          "body": "$\\sqrt{x}/e\\le\\sqrt{x}\\,e^{\\sin(\\pi/x)}\\le e\\sqrt{x}$. The square root tends to zero from the right: for any positive $\\eta$, $0<x<\\eta^2$ implies $0<\\sqrt{x}<\\eta$. Thus both bounding functions tend to $0$, and the one-sided Squeeze Theorem proves the result."
+        }
+      ],
+      "answer": "$0$."
+    }
+  },
+  {
+    "number": 41,
+    "prompt": "求 $\\lim_{x\\to3}(2x+|x-3|)$；若不存在，说明原因。",
+    "concept": [
+      "substitution",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "分左右去掉绝对值",
+        "body": "当 $x<3$ 时，$2x+|x-3|=x+3$；当 $x>3$ 时，$2x+|x-3|=3x-3$。"
+      },
+      {
+        "title": "比较单侧极限",
+        "body": "左极限为 $3+3=6$；右极限为 $3\\cdot3-3=6$。两者相等，故双侧极限为 $6$。"
+      }
+    ],
+    "answer": "$6$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to3}(2x+|x-3|)$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Remove the absolute value on each side",
+          "body": "For $x<3$, $2x+|x-3|=x+3$. For $x>3$, $2x+|x-3|=3x-3$."
+        },
+        {
+          "title": "Compare one-sided limits",
+          "body": "The left limit is $3+3=6$, and the right limit is $3\\cdot3-3=6$. Since they agree, the two-sided limit is $6$."
+        }
+      ],
+      "answer": "$6$."
+    }
+  },
+  {
+    "number": 42,
+    "prompt": "求 $\\lim_{x\\to-6}\\frac{2x+12}{|x+6|}$；若不存在，说明原因。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "分区间化简",
+        "body": "$2x+12=2(x+6)$。当 $x>-6$ 时，商为 $2$；当 $x<-6$ 时，$|x+6|=-(x+6)$，商为 $-2$。"
+      },
+      {
+        "title": "单侧极限不相等",
+        "body": "$\\lim_{x\\to-6^-}\\frac{2x+12}{|x+6|}=-2$，而 $\\lim_{x\\to-6^+}\\frac{2x+12}{|x+6|}=2$。因此双侧极限不存在。"
+      }
+    ],
+    "answer": "不存在；左极限为 $-2$，右极限为 $2$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to-6}\\frac{2x+12}{|x+6|}$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Simplify on each side",
+          "body": "$2x+12=2(x+6)$. For $x>-6$, the quotient is $2$. For $x<-6$, $|x+6|=-(x+6)$ and the quotient is $-2$."
+        },
+        {
+          "title": "The one-sided limits differ",
+          "body": "$\\lim_{x\\to-6^-}\\frac{2x+12}{|x+6|}=-2$, whereas $\\lim_{x\\to-6^+}\\frac{2x+12}{|x+6|}=2$. Thus the two-sided limit does not exist."
+        }
+      ],
+      "answer": "Does not exist; the left limit is $-2$ and the right limit is $2$."
+    }
+  },
+  {
+    "number": 43,
+    "prompt": "求 $\\lim_{x\\to0.5^-}\\frac{2x-1}{|2x^3-x^2|}$；若不存在，说明原因。",
+    "concept": [
+      "one-sided",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "因式分解并判断符号",
+        "body": "$|2x^3-x^2|=|x^2(2x-1)|=x^2|2x-1|$。在 $x=0.5$ 左侧足够近处，$2x-1<0$ 且 $x\\ne0$，所以 $|2x-1|=-(2x-1)$。"
+      },
+      {
+        "title": "约去非零因子后代入",
+        "body": "在该去心左邻域内，$\\frac{2x-1}{|2x^3-x^2|}=-1/x^2$，故极限为 $-1/(0.5)^2=-4$。"
+      }
+    ],
+    "answer": "$-4$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to0.5^-}\\frac{2x-1}{|2x^3-x^2|}$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Factor and determine the sign",
+          "body": "$|2x^3-x^2|=|x^2(2x-1)|=x^2|2x-1|$. Just to the left of $0.5$, $2x-1<0$ and $x\\ne0$, so $|2x-1|=-(2x-1)$."
+        },
+        {
+          "title": "Cancel and substitute",
+          "body": "In this punctured left neighborhood, $\\frac{2x-1}{|2x^3-x^2|}=-1/x^2$. The limit is therefore $-1/(0.5)^2=-4$."
+        }
+      ],
+      "answer": "$-4$."
+    }
+  },
+  {
+    "number": 44,
+    "prompt": "求 $\\lim_{x\\to-2}\\frac{2-|x|}{2+x}$；若不存在，说明原因。",
+    "concept": [
+      "cancellation",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "使用整个邻域的符号",
+        "body": "在 $-2$ 的充分小邻域内，两侧的 $x$ 都为负数，故 $|x|=-x$，分子变成 $2+x$。"
+      },
+      {
+        "title": "在去心邻域约去",
+        "body": "对于该邻域内 $x\\ne-2$，$\\frac{2-|x|}{2+x}=\\frac{2+x}{2+x}=1$，所以极限为 $1$；原式在 $x=-2$ 未定义不影响极限。"
+      }
+    ],
+    "answer": "$1$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to-2}\\frac{2-|x|}{2+x}$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Use the sign throughout a neighborhood",
+          "body": "In a sufficiently small neighborhood of $-2$, $x$ is negative on both sides. Thus $|x|=-x$ and the numerator becomes $2+x$."
+        },
+        {
+          "title": "Cancel in the punctured neighborhood",
+          "body": "For $x\\ne-2$ in that neighborhood, $\\frac{2-|x|}{2+x}=\\frac{2+x}{2+x}=1$. The limit is $1$ even though the original expression is undefined at $x=-2$."
+        }
+      ],
+      "answer": "$1$."
+    }
+  },
+  {
+    "number": 45,
+    "prompt": "求 $\\lim_{x\\to0^-}\\left(\\frac1x-\\frac1{|x|}\\right)$；若不存在，说明原因。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "在左侧处理绝对值",
+        "body": "当 $x<0$ 时，$|x|=-x$，所以 $\\frac1x-\\frac1{|x|}=\\frac1x-\\frac1{-x}=2/x$。"
+      },
+      {
+        "title": "描述无界行为",
+        "body": "当负数 $x$ 越来越接近 $0$，$2/x$ 无界地减小。因此不存在有限实数极限；用无穷极限记号写为 $-\\infty$。"
+      }
+    ],
+    "answer": "无有限极限；表达式趋于 $-\\infty$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to0^-}\\left(\\frac1x-\\frac1{|x|}\\right)$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Remove the absolute value on the left",
+          "body": "For $x<0$, $|x|=-x$, so $\\frac1x-\\frac1{|x|}=\\frac1x-\\frac1{-x}=2/x$."
+        },
+        {
+          "title": "Describe the unbounded behavior",
+          "body": "As negative $x$ approaches $0$, $2/x$ decreases without bound. There is no finite real limit; in infinite-limit notation it is $-\\infty$."
+        }
+      ],
+      "answer": "No finite limit; the expression tends to $-\\infty$."
+    }
+  },
+  {
+    "number": 46,
+    "prompt": "求 $\\lim_{x\\to0^+}\\left(\\frac1x-\\frac1{|x|}\\right)$；若不存在，说明原因。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "在右侧化简整个表达式",
+        "body": "当 $x>0$ 时，$|x|=x$，所以 $\\frac1x-\\frac1{|x|}=1/x-1/x=0$。先化简，不把两个无穷量当作有限极限相减。"
+      },
+      {
+        "title": "取常数极限",
+        "body": "表达式在整个右侧去心邻域恒等于 $0$，故右极限为 $0$。"
+      }
+    ],
+    "answer": "$0$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Find $\\lim_{x\\to0^+}\\left(\\frac1x-\\frac1{|x|}\\right)$, if it exists. If the limit does not exist, explain why.",
+      "steps": [
+        {
+          "title": "Simplify the whole expression on the right",
+          "body": "For $x>0$, $|x|=x$, so $\\frac1x-\\frac1{|x|}=1/x-1/x=0$. Simplify first rather than subtracting two unbounded terms as if they had finite limits."
+        },
+        {
+          "title": "Take the constant limit",
+          "body": "The expression equals $0$ throughout the punctured right neighborhood, so its right-hand limit is $0$."
+        }
+      ],
+      "answer": "$0$."
+    }
+  },
+  {
+    "number": 47,
+    "prompt": "符号函数 $\\operatorname{sgn}x$ 定义为：$x<0$ 时取 $-1$，$x=0$ 时取 $0$，$x>0$ 时取 $1$。(a) 画出图像。(b) 求下列极限，或解释为何不存在：(i) $\\lim_{x\\to0^+}\\operatorname{sgn}x$；(ii) $\\lim_{x\\to0^-}\\operatorname{sgn}x$；(iii) $\\lim_{x\\to0}\\operatorname{sgn}x$；(iv) $\\lim_{x\\to0}|\\operatorname{sgn}x|$。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "画分段图 (a)",
+        "body": "在 $x<0$ 画水平射线 $y=-1$，在 $x>0$ 画水平射线 $y=1$，并在 $(0,-1)$、$(0,1)$ 画空心点；在 $(0,0)$ 画实心点。解答图展示这些端点。"
+      },
+      {
+        "title": "分别求单侧极限 (b.i–ii)",
+        "body": "右侧函数恒为 $1$，故 (i) 为 $1$；左侧函数恒为 $-1$，故 (ii) 为 $-1$。"
+      },
+      {
+        "title": "检查双侧极限 (b.iii)",
+        "body": "因为左、右极限 $-1$ 和 $1$ 不相等，(iii) 不存在。函数值 $\\operatorname{sgn}0=0$ 不能改变这个结论。"
+      },
+      {
+        "title": "取绝对值 (b.iv)",
+        "body": "对所有 $x\\ne0$，$|\\operatorname{sgn}x|=1$，因此 (iv) 的双侧极限为 $1$。"
+      }
+    ],
+    "answer": "(a) 图见解析；(b) (i) $1$，(ii) $-1$，(iii) 不存在，(iv) $1$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "The signum (or sign) function, denoted by $\\operatorname{sgn}$, is defined by $\\operatorname{sgn}x=-1$ if $x<0$, $0$ if $x=0$, and $1$ if $x>0$. (a) Sketch the graph of this function. (b) Find each of the following limits or explain why it does not exist: (i) $\\lim_{x\\to0^+}\\operatorname{sgn}x$; (ii) $\\lim_{x\\to0^-}\\operatorname{sgn}x$; (iii) $\\lim_{x\\to0}\\operatorname{sgn}x$; (iv) $\\lim_{x\\to0}|\\operatorname{sgn}x|$.",
+      "steps": [
+        {
+          "title": "Sketch the pieces (a)",
+          "body": "Draw the horizontal ray $y=-1$ for $x<0$ and $y=1$ for $x>0$, with open points at $(0,-1)$ and $(0,1)$. Place a filled point at $(0,0)$. These endpoints appear in the solution graph."
+        },
+        {
+          "title": "Find the one-sided limits (b.i–ii)",
+          "body": "The function equals $1$ on the right, so (i) is $1$. It equals $-1$ on the left, so (ii) is $-1$."
+        },
+        {
+          "title": "Check the two-sided limit (b.iii)",
+          "body": "The one-sided limits $-1$ and $1$ differ, so (iii) does not exist. The value $\\operatorname{sgn}0=0$ does not change this conclusion."
+        },
+        {
+          "title": "Take the absolute value (b.iv)",
+          "body": "For every $x\\ne0$, $|\\operatorname{sgn}x|=1$, so the two-sided limit in (iv) is $1$."
+        }
+      ],
+      "answer": "(a) See the solution graph; (b) (i) $1$, (ii) $-1$, (iii) does not exist, (iv) $1$."
+    },
+    "subpartIds": [
+      "a",
+      "b.i",
+      "b.ii",
+      "b.iii",
+      "b.iv"
+    ],
+    "solutionImage": "assets/exercise-47-solution.png"
+  },
+  {
+    "number": 48,
+    "prompt": "设 $f(x)=x^2+1$（$x<1$），$f(x)=(x-2)^2$（$x\\ge1$）。(a) 求 $\\lim_{x\\to1^-}f(x)$ 和 $\\lim_{x\\to1^+}f(x)$。(b) $\\lim_{x\\to1}f(x)$ 是否存在？(c) 画出 $f$ 的图像。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "使用各侧的公式 (a)",
+        "body": "从左侧靠近 $1$ 用 $x^2+1$，得 $1^2+1=2$；从右侧靠近 $1$ 用 $(x-2)^2$，得 $(1-2)^2=1$。"
+      },
+      {
+        "title": "比较两侧 (b)",
+        "body": "左极限 $2$ 与右极限 $1$ 不相等，故双侧极限不存在，虽然 $f(1)=1$。"
+      },
+      {
+        "title": "标注图像端点 (c)",
+        "body": "在 $x<1$ 画抛物线 $y=x^2+1$ 并在 $(1,2)$ 留空心点；在 $x\\ge1$ 画 $y=(x-2)^2$，在 $(1,1)$ 画实心点，其顶点为 $(2,0)$。"
+      }
+    ],
+    "answer": "(a) 左极限 $2$，右极限 $1$；(b) 不存在；(c) 图见解析。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Let $f(x)=x^2+1$ if $x<1$, and $f(x)=(x-2)^2$ if $x\\ge1$. (a) Find $\\lim_{x\\to1^-}f(x)$ and $\\lim_{x\\to1^+}f(x)$. (b) Does $\\lim_{x\\to1}f(x)$ exist? (c) Sketch the graph of $f$.",
+      "steps": [
+        {
+          "title": "Use the formula on each side (a)",
+          "body": "Approaching $1$ from the left uses $x^2+1$, giving $1^2+1=2$. Approaching from the right uses $(x-2)^2$, giving $(1-2)^2=1$."
+        },
+        {
+          "title": "Compare the sides (b)",
+          "body": "The left limit $2$ and right limit $1$ differ, so the two-sided limit does not exist, although $f(1)=1$."
+        },
+        {
+          "title": "Mark the graph endpoints (c)",
+          "body": "Plot $y=x^2+1$ for $x<1$ with an open point at $(1,2)$. Plot $y=(x-2)^2$ for $x\\ge1$ with a filled point at $(1,1)$ and vertex $(2,0)$."
+        }
+      ],
+      "answer": "(a) Left limit $2$, right limit $1$; (b) does not exist; (c) see the solution graph."
+    },
+    "subpartIds": [
+      "a",
+      "b",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-48-solution.png"
+  },
+  {
+    "number": 49,
+    "prompt": "设 $g(x)=\\frac{x^2+x-6}{|x-2|}$。(a) 求 (i) $\\lim_{x\\to2^+}g(x)$，(ii) $\\lim_{x\\to2^-}g(x)$。(b) $\\lim_{x\\to2}g(x)$ 是否存在？(c) 画出 $g$ 的图像。",
+    "concept": [
+      "one-sided",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "因式分解并分段",
+        "body": "$x^2+x-6=(x+3)(x-2)$。当 $x>2$ 时，$g(x)=x+3$；当 $x<2$ 时，$g(x)=-(x+3)$。原函数在 $x=2$ 未定义。"
+      },
+      {
+        "title": "计算单侧极限 (a)",
+        "body": "(i) 从右侧使用 $x+3$，极限为 $5$；(ii) 从左侧使用 $-(x+3)$，极限为 $-5$。"
+      },
+      {
+        "title": "比较并作图 (b–c)",
+        "body": "单侧极限不同，所以 (b) 不存在。(c) 左侧画直线 $y=-x-3$，端点 $(2,-5)$ 为空心；右侧画 $y=x+3$，端点 $(2,5)$ 为空心。两个空心点之间不连接。"
+      }
+    ],
+    "answer": "(a.i) $5$；(a.ii) $-5$；(b) 不存在；(c) 图见解析。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Let $g(x)=\\frac{x^2+x-6}{|x-2|}$. (a) Find (i) $\\lim_{x\\to2^+}g(x)$ and (ii) $\\lim_{x\\to2^-}g(x)$. (b) Does $\\lim_{x\\to2}g(x)$ exist? (c) Sketch the graph of $g$.",
+      "steps": [
+        {
+          "title": "Factor and split into pieces",
+          "body": "$x^2+x-6=(x+3)(x-2)$. For $x>2$, $g(x)=x+3$. For $x<2$, $g(x)=-(x+3)$. The original function is undefined at $x=2$."
+        },
+        {
+          "title": "Evaluate the one-sided limits (a)",
+          "body": "(i) On the right use $x+3$, giving a limit of $5$. (ii) On the left use $-(x+3)$, giving a limit of $-5$."
+        },
+        {
+          "title": "Compare and sketch (b–c)",
+          "body": "The one-sided limits differ, so (b) does not exist. For (c), plot $y=-x-3$ on the left with an open endpoint at $(2,-5)$, and $y=x+3$ on the right with an open endpoint at $(2,5)$. Do not connect the two open points."
+        }
+      ],
+      "answer": "(a.i) $5$; (a.ii) $-5$; (b) does not exist; (c) see the solution graph."
+    },
+    "subpartIds": [
+      "a.i",
+      "a.ii",
+      "b",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-49-solution.png"
+  },
+  {
+    "number": 50,
+    "prompt": "设 $g(x)=x$（$x<1$），$g(1)=3$，$g(x)=2-x^2$（$1<x\\le2$），$g(x)=x-3$（$x>2$）。(a) 求下列值或极限（若存在）：(i) $\\lim_{x\\to1^-}g(x)$，(ii) $\\lim_{x\\to1}g(x)$，(iii) $g(1)$，(iv) $\\lim_{x\\to2^-}g(x)$，(v) $\\lim_{x\\to2^+}g(x)$，(vi) $\\lim_{x\\to2}g(x)$。(b) 画出 $g$ 的图像。",
+    "concept": "one-sided",
+    "steps": [
+      {
+        "title": "检查 $x=1$ 附近 (a.i–iii)",
+        "body": "(i) 左侧公式为 $x$，极限为 $1$。右侧公式为 $2-x^2$，极限也为 $2-1=1$，所以 (ii) 双侧极限为 $1$。但 (iii) 根据单点定义 $g(1)=3$；函数值可以与极限不同。"
+      },
+      {
+        "title": "检查 $x=2$ 附近 (a.iv–vi)",
+        "body": "(iv) 左侧用 $2-x^2$ 得 $2-4=-2$。(v) 右侧用 $x-3$ 得 $2-3=-1$。因此 (vi) 左右不相等，双侧极限不存在。"
+      },
+      {
+        "title": "画图并区分单点 (b)",
+        "body": "画三段：$y=x$（$x<1$），$y=2-x^2$（$1<x\\le2$），$y=x-3$（$x>2$）。在 $(1,1)$ 画空心点、$(1,3)$ 画实心点；$(2,-2)$ 为实心点，$(2,-1)$ 为空心点。"
+      }
+    ],
+    "answer": "(a) (i) $1$，(ii) $1$，(iii) $3$，(iv) $-2$，(v) $-1$，(vi) 不存在；(b) 图见解析。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Let $g(x)=x$ if $x<1$, $3$ if $x=1$, $2-x^2$ if $1<x\\le2$, and $x-3$ if $x>2$. (a) Evaluate each of the following, if it exists: (i) $\\lim_{x\\to1^-}g(x)$; (ii) $\\lim_{x\\to1}g(x)$; (iii) $g(1)$; (iv) $\\lim_{x\\to2^-}g(x)$; (v) $\\lim_{x\\to2^+}g(x)$; (vi) $\\lim_{x\\to2}g(x)$. (b) Sketch the graph of $g$.",
+      "steps": [
+        {
+          "title": "Examine $x=1$ (a.i–iii)",
+          "body": "(i) The left-hand formula is $x$, so the limit is $1$. The right-hand formula is $2-x^2$, whose limit is also $2-1=1$; thus (ii) the two-sided limit is $1$. However, (iii) the single-point definition gives $g(1)=3$. The value can differ from the limit."
+        },
+        {
+          "title": "Examine $x=2$ (a.iv–vi)",
+          "body": "(iv) From the left, $2-x^2$ gives $2-4=-2$. (v) From the right, $x-3$ gives $2-3=-1$. Therefore (vi) the one-sided limits disagree and the two-sided limit does not exist."
+        },
+        {
+          "title": "Sketch the pieces and isolated value (b)",
+          "body": "Draw $y=x$ for $x<1$, $y=2-x^2$ for $1<x\\le2$, and $y=x-3$ for $x>2$. Mark $(1,1)$ open and $(1,3)$ filled; mark $(2,-2)$ filled and $(2,-1)$ open."
+        }
+      ],
+      "answer": "(a) (i) $1$, (ii) $1$, (iii) $3$, (iv) $-2$, (v) $-1$, (vi) does not exist; (b) see the solution graph."
+    },
+    "subpartIds": [
+      "a.i",
+      "a.ii",
+      "a.iii",
+      "a.iv",
+      "a.v",
+      "a.vi",
+      "b"
+    ],
+    "solutionImage": "assets/exercise-50-solution.png"
+  },
+  {
+    "number": 51,
+    "prompt": "(a) 记 $\\lfloor x\\rfloor$ 为例题 10 定义的最大整数函数，求 (i) $\\lim_{x\\to-2^+}\\lfloor x\\rfloor$，(ii) $\\lim_{x\\to-2}\\lfloor x\\rfloor$，(iii) $\\lim_{x\\to-2.4}\\lfloor x\\rfloor$。(b) 若 $n$ 为整数，求 (i) $\\lim_{x\\to n^-}\\lfloor x\\rfloor$，(ii) $\\lim_{x\\to n^+}\\lfloor x\\rfloor$。(c) $a$ 取何值时 $\\lim_{x\\to a}\\lfloor x\\rfloor$ 存在？",
+    "concept": [
+      "floor",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "负数也向下取整 (a.i–ii)",
+        "body": "在 $[-2,-1)$ 上，$\\lfloor x\\rfloor=-2$，故 (i) 为 $-2$。在 $[-3,-2)$ 上，$\\lfloor x\\rfloor=-3$，所以 $x\\to-2$ 的左极限为 $-3$、右极限为 $-2$，(ii) 不存在。"
+      },
+      {
+        "title": "非整数处局部恒定 (a.iii)",
+        "body": "$-2.4$ 位于开区间 $(-3,-2)$ 内；其附近函数恒为 $-3$，故 (iii) 为 $-3$。"
+      },
+      {
+        "title": "一般整数的左右极限 (b)",
+        "body": "在 $n$ 左侧足够近处，$n-1<x<n$，向下取整为 $n-1$；右侧足够近处，$n<x<n+1$，向下取整为 $n$。因此 (i) $n-1$，(ii) $n$。"
+      },
+      {
+        "title": "判断所有 $a$ (c)",
+        "body": "每个非整数 $a$ 位于某个 $(k,k+1)$ 内，函数在其邻域恒为 $k$，所以极限存在且为 $\\lfloor a\\rfloor$。每个整数处左右极限相差 $1$，所以极限不存在。解答图显示这种阶梯结构。"
+      }
+    ],
+    "answer": "(a) (i) $-2$，(ii) 不存在，(iii) $-3$；(b) (i) $n-1$，(ii) $n$；(c) 所有非整数 $a$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "(a) If the symbol $\\lfloor\\ \\rfloor$ denotes the greatest integer function defined in Example 10, evaluate (i) $\\lim_{x\\to-2^+}\\lfloor x\\rfloor$, (ii) $\\lim_{x\\to-2}\\lfloor x\\rfloor$, and (iii) $\\lim_{x\\to-2.4}\\lfloor x\\rfloor$. (b) If $n$ is an integer, evaluate (i) $\\lim_{x\\to n^-}\\lfloor x\\rfloor$ and (ii) $\\lim_{x\\to n^+}\\lfloor x\\rfloor$. (c) For what values of $a$ does $\\lim_{x\\to a}\\lfloor x\\rfloor$ exist?",
+      "steps": [
+        {
+          "title": "Round downward for negative numbers (a.i–ii)",
+          "body": "On $[-2,-1)$, $\\lfloor x\\rfloor=-2$, so (i) is $-2$. On $[-3,-2)$, $\\lfloor x\\rfloor=-3$. At $-2$ the left limit is $-3$ and the right limit is $-2$, so (ii) does not exist."
+        },
+        {
+          "title": "Use local constancy at a noninteger (a.iii)",
+          "body": "$-2.4$ lies inside $(-3,-2)$, where the function is constantly $-3$ in a neighborhood. Thus (iii) is $-3$."
+        },
+        {
+          "title": "Find the one-sided limits at an integer (b)",
+          "body": "Just left of $n$, $n-1<x<n$ and the floor is $n-1$. Just right of $n$, $n<x<n+1$ and the floor is $n$. Therefore (i) is $n-1$ and (ii) is $n$."
+        },
+        {
+          "title": "Classify all $a$ (c)",
+          "body": "Each noninteger $a$ lies in some $(k,k+1)$, where the function is locally constant at $k$. Its limit exists and equals $\\lfloor a\\rfloor$. At each integer the one-sided limits differ by $1$, so the limit does not exist. The solution graph shows this staircase structure."
+        }
+      ],
+      "answer": "(a) (i) $-2$, (ii) does not exist, (iii) $-3$; (b) (i) $n-1$, (ii) $n$; (c) all noninteger $a$."
+    },
+    "subpartIds": [
+      "a.i",
+      "a.ii",
+      "a.iii",
+      "b.i",
+      "b.ii",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-51-solution.png"
+  },
+  {
+    "number": 52,
+    "prompt": "设 $f(x)=\\lfloor\\cos x\\rfloor$，$-\\pi\\le x\\le\\pi$。(a) 画出 $f$ 的图像。(b) 求下列极限（若存在）：(i) $\\lim_{x\\to0}f(x)$，(ii) $\\lim_{x\\to(\\pi/2)^-}f(x)$，(iii) $\\lim_{x\\to(\\pi/2)^+}f(x)$，(iv) $\\lim_{x\\to\\pi/2}f(x)$。(c) $a$ 取何值时 $\\lim_{x\\to a}f(x)$ 存在？",
+    "concept": [
+      "floor",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "将余弦范围转为阶梯 (a)",
+        "body": "在 $[-\\pi,-\\pi/2)$ 与 $(\\pi/2,\\pi]$ 上，$-1\\le\\cos x<0$，故 $f=-1$。在 $[-\\pi/2,0)$ 与 $(0,\\pi/2]$ 上，$0\\le\\cos x<1$，故 $f=0$。仅在 $x=0$，$\\cos0=1$，所以 $f(0)=1$。解答图精确标注开闭端点。"
+      },
+      {
+        "title": "求 $0$ 处极限 (b.i)",
+        "body": "在 $0$ 两侧充分近且 $x\\ne0$ 时，$f(x)=0$，所以极限为 $0$。单点函数值 $f(0)=1$ 不影响它。"
+      },
+      {
+        "title": "求 $\\pi/2$ 处极限 (b.ii–iv)",
+        "body": "从 $\\pi/2$ 左侧靠近时，余弦为小正数，取整为 $0$；从右侧靠近时，余弦为小负数，取整为 $-1$。因此 (ii) $0$，(iii) $-1$，(iv) 不存在。"
+      },
+      {
+        "title": "分类所有位置 (c)",
+        "body": "在内部点，只有 $a=\\pm\\pi/2$ 存在跳跃；$a=0$ 虽有孤立点值，极限仍存在。按本节双侧极限的约定，所有 $a\\in(-\\pi,\\pi)\\setminus\\{-\\pi/2,\\pi/2\\}$ 的极限存在。端点仅有 $\\lim_{x\\to-\\pi^+}f(x)=\\lim_{x\\to\\pi^-}f(x)=-1$，不列为双侧极限。"
+      }
+    ],
+    "answer": "(a) 图见解析；(b) (i) $0$，(ii) $0$，(iii) $-1$，(iv) 不存在；(c) $a\\in(-\\pi,\\pi)\\setminus\\{-\\pi/2,\\pi/2\\}$，其中 $a=0$ 包含在内。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Let $f(x)=\\lfloor\\cos x\\rfloor$, $-\\pi\\le x\\le\\pi$. (a) Sketch the graph of $f$. (b) Evaluate each limit, if it exists: (i) $\\lim_{x\\to0}f(x)$; (ii) $\\lim_{x\\to(\\pi/2)^-}f(x)$; (iii) $\\lim_{x\\to(\\pi/2)^+}f(x)$; (iv) $\\lim_{x\\to\\pi/2}f(x)$. (c) For what values of $a$ does $\\lim_{x\\to a}f(x)$ exist?",
+      "steps": [
+        {
+          "title": "Turn the cosine ranges into steps (a)",
+          "body": "On $[-\\pi,-\\pi/2)$ and $(\\pi/2,\\pi]$, $-1\\le\\cos x<0$, so $f=-1$. On $[-\\pi/2,0)$ and $(0,\\pi/2]$, $0\\le\\cos x<1$, so $f=0$. Only at $x=0$ does $\\cos0=1$, giving $f(0)=1$. The solution graph marks the open and closed endpoints."
+        },
+        {
+          "title": "Find the limit at $0$ (b.i)",
+          "body": "For nonzero $x$ sufficiently close to $0$ on either side, $f(x)=0$, so the limit is $0$. The isolated value $f(0)=1$ does not affect it."
+        },
+        {
+          "title": "Find the limits at $\\pi/2$ (b.ii–iv)",
+          "body": "Just left of $\\pi/2$, the cosine is a small positive number and its floor is $0$. Just right of $\\pi/2$, it is a small negative number and its floor is $-1$. Thus (ii) is $0$, (iii) is $-1$, and (iv) does not exist."
+        },
+        {
+          "title": "Classify the locations (c)",
+          "body": "Among interior points, only $a=\\pm\\pi/2$ have jumps. At $a=0$, the isolated function value does not prevent the limit. Under the two-sided convention of this section, the limit exists for all $a\\in(-\\pi,\\pi)\\setminus\\{-\\pi/2,\\pi/2\\}$. At the endpoints there are only the inward limits $\\lim_{x\\to-\\pi^+}f(x)=\\lim_{x\\to\\pi^-}f(x)=-1$; these are not listed as two-sided limits."
+        }
+      ],
+      "answer": "(a) See the solution graph; (b) (i) $0$, (ii) $0$, (iii) $-1$, (iv) does not exist; (c) $a\\in(-\\pi,\\pi)\\setminus\\{-\\pi/2,\\pi/2\\}$, including $a=0$."
+    },
+    "subpartIds": [
+      "a",
+      "b.i",
+      "b.ii",
+      "b.iii",
+      "b.iv",
+      "c"
+    ],
+    "solutionImage": "assets/exercise-52-solution.png"
+  },
+  {
+    "number": 53,
+    "prompt": "设 $f(x)=\\lfloor x\\rfloor+\\lfloor-x\\rfloor$，证明 $\\lim_{x\\to2}f(x)$ 存在，但不等于 $f(2)$。",
+    "concept": [
+      "floor",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "计算单点函数值",
+        "body": "$f(2)=\\lfloor2\\rfloor+\\lfloor-2\\rfloor=2-2=0$。这只说明点上的值，不能直接给出极限。"
+      },
+      {
+        "title": "分别检查左右邻域",
+        "body": "若 $1<x<2$，则 $\\lfloor x\\rfloor=1$、$\\lfloor-x\\rfloor=-2$，故 $f(x)=-1$。若 $2<x<3$，则两项为 $2$ 与 $-3$，仍有 $f(x)=-1$。"
+      },
+      {
+        "title": "得出双侧极限",
+        "body": "左右极限都为 $-1$，因此 $\\lim_{x\\to2}f(x)=-1\\ne0=f(2)$。"
+      }
+    ],
+    "answer": "$\\lim_{x\\to2}f(x)=-1$，但 $f(2)=0$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $f(x)=\\lfloor x\\rfloor+\\lfloor-x\\rfloor$, show that $\\lim_{x\\to2}f(x)$ exists but is not equal to $f(2)$.",
+      "steps": [
+        {
+          "title": "Evaluate the function at the point",
+          "body": "$f(2)=\\lfloor2\\rfloor+\\lfloor-2\\rfloor=2-2=0$. This gives the value at the point, not the limit."
+        },
+        {
+          "title": "Check both neighboring intervals",
+          "body": "If $1<x<2$, then $\\lfloor x\\rfloor=1$ and $\\lfloor-x\\rfloor=-2$, so $f(x)=-1$. If $2<x<3$, the terms are $2$ and $-3$, again giving $f(x)=-1$."
+        },
+        {
+          "title": "Conclude the two-sided limit",
+          "body": "Both one-sided limits equal $-1$, so $\\lim_{x\\to2}f(x)=-1\\ne0=f(2)$."
+        }
+      ],
+      "answer": "$\\lim_{x\\to2}f(x)=-1$, but $f(2)=0$."
+    }
+  },
+  {
+    "number": 54,
+    "prompt": "在相对论中，洛伦兹收缩公式 $L=L_0\\sqrt{1-v^2/c^2}$ 表示物体相对观察者以速度 $v$ 运动时的长度 $L$，其中 $L_0$ 为静止长度，$c$ 为光速。求 $\\lim_{v\\to c^-}L$ 并解释结果。为什么必须取左极限？",
+    "concept": [
+      "substitution",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "从允许的一侧求极限",
+        "body": "取 $L_0>0$、$c>0$ 为常数。当 $v\\to c^-$ 时，$u=1-v^2/c^2\\to0$ 且保持非负。对任意正数 $\\eta$，$0\\le u<\\eta^2$ 蕴含 $0\\le\\sqrt{u}<\\eta$，所以平方根也趋零。因此 $\\lim_{v\\to c^-}L=L_0\\cdot0=0$。"
+      },
+      {
+        "title": "解释长度和方向",
+        "body": "按该公式，当速度从小于光速的一侧趋近光速时，观察到的长度趋于零。若 $v>c$，根号内为负，公式无实数长度值，所以不能从右侧逼近 $c$。"
+      }
+    ],
+    "answer": "极限为 $0$；速度从下方趋近光速时，公式中的观察长度趋零。左极限由实数定义域决定。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "In the theory of relativity, the Lorentz contraction formula $L=L_0\\sqrt{1-v^2/c^2}$ expresses the length $L$ of an object as a function of its velocity $v$ with respect to an observer, where $L_0$ is the length of the object at rest and $c$ is the speed of light. Find $\\lim_{v\\to c^-}L$ and interpret the result. Why is a left-hand limit necessary?",
+      "steps": [
+        {
+          "title": "Approach from the allowed side",
+          "body": "Treat $L_0>0$ and $c>0$ as constants. As $v\\to c^-$, $u=1-v^2/c^2\\to0$ while remaining nonnegative. For any positive $\\eta$, $0\\le u<\\eta^2$ implies $0\\le\\sqrt{u}<\\eta$, so the square root also tends to zero. Thus $\\lim_{v\\to c^-}L=L_0\\cdot0=0$."
+        },
+        {
+          "title": "Interpret the length and direction",
+          "body": "According to this formula, the observed length approaches zero as the velocity approaches the speed of light from below. If $v>c$, the radicand is negative and the formula gives no real length, so a right-hand approach to $c$ is unavailable."
+        }
+      ],
+      "answer": "The limit is $0$: the observed length in the formula approaches zero as velocity approaches the speed of light from below. The real domain requires the left-hand limit."
+    }
+  },
+  {
+    "number": 55,
+    "prompt": "若 $p$ 是多项式，证明 $\\lim_{x\\to a}p(x)=p(a)$。",
+    "concept": [
+      "limit-laws",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "写成有限项之和",
+        "body": "设 $p(x)=c_0+c_1x+\\cdots+c_nx^n$，系数均为常数。基本极限 $\\lim_{x\\to a}x=a$ 配合幂定律得到 $\\lim_{x\\to a}x^k=a^k$（$k\\ge1$）。"
+      },
+      {
+        "title": "逐项应用极限定律",
+        "body": "常数倍与有限和定律给出 $\\lim_{x\\to a}p(x)=c_0+c_1a+\\cdots+c_na^n=p(a)$，对任意实数 $a$ 都成立。"
+      }
+    ],
+    "answer": "任意多项式在任意实数 $a$ 处都有 $\\lim_{x\\to a}p(x)=p(a)$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $p$ is a polynomial, show that $\\lim_{x\\to a}p(x)=p(a)$.",
+      "steps": [
+        {
+          "title": "Write a finite sum",
+          "body": "Let $p(x)=c_0+c_1x+\\cdots+c_nx^n$ with constant coefficients. The basic limit $\\lim_{x\\to a}x=a$ and the power law give $\\lim_{x\\to a}x^k=a^k$ for $k\\ge1$."
+        },
+        {
+          "title": "Apply the laws term by term",
+          "body": "The constant-multiple and finite-sum laws give $\\lim_{x\\to a}p(x)=c_0+c_1a+\\cdots+c_na^n=p(a)$ for every real $a$."
+        }
+      ],
+      "answer": "For every polynomial and every real $a$, $\\lim_{x\\to a}p(x)=p(a)$."
+    }
+  },
+  {
+    "number": 56,
+    "prompt": "若 $r$ 是有理函数，使用第 55 题证明：对 $r$ 定义域中的每个数 $a$，$\\lim_{x\\to a}r(x)=r(a)$。",
+    "concept": [
+      "limit-laws",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "写出分子和分母",
+        "body": "设 $r(x)=p(x)/q(x)$，其中 $p,q$ 为多项式。由于 $a$ 在该有理函数定义域中，$q(a)\\ne0$。"
+      },
+      {
+        "title": "使用第 55 题和商定律",
+        "body": "第 55 题给出 $\\lim_{x\\to a}p(x)=p(a)$ 及 $\\lim_{x\\to a}q(x)=q(a)\\ne0$。于是商定律给出 $\\lim_{x\\to a}r(x)=p(a)/q(a)=r(a)$。"
+      }
+    ],
+    "answer": "$\\lim_{x\\to a}r(x)=r(a)$，条件是 $a$ 在定义域中，即分母 $q(a)\\ne0$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $r$ is a rational function, use Exercise 55 to show that $\\lim_{x\\to a}r(x)=r(a)$ for every number $a$ in the domain of $r$.",
+      "steps": [
+        {
+          "title": "Identify numerator and denominator",
+          "body": "Write $r(x)=p(x)/q(x)$, where $p$ and $q$ are polynomials. Because $a$ is in the domain of this rational function, $q(a)\\ne0$."
+        },
+        {
+          "title": "Use Exercise 55 and the quotient law",
+          "body": "Exercise 55 gives $\\lim_{x\\to a}p(x)=p(a)$ and $\\lim_{x\\to a}q(x)=q(a)\\ne0$. The quotient law then gives $\\lim_{x\\to a}r(x)=p(a)/q(a)=r(a)$."
+        }
+      ],
+      "answer": "$\\lim_{x\\to a}r(x)=r(a)$ whenever $a$ is in the domain, meaning $q(a)\\ne0$."
+    }
+  },
+  {
+    "number": 57,
+    "prompt": "若 $\\lim_{x\\to1}\\frac{f(x)-8}{x-1}=10$，求 $\\lim_{x\\to1}f(x)$。",
+    "concept": [
+      "limit-laws",
+      "difference-quotients"
+    ],
+    "steps": [
+      {
+        "title": "重写未知函数",
+        "body": "在 $x\\ne1$ 的去心邻域中，$f(x)-8=\\frac{f(x)-8}{x-1}(x-1)$，因此 $f(x)=8+\\frac{f(x)-8}{x-1}(x-1)$。"
+      },
+      {
+        "title": "先求乘积再加常数",
+        "body": "所给比值极限为有限数 $10$，而 $x-1\\to0$。由积定律，$f(x)-8\\to10\\cdot0=0$；再用和定律得 $f(x)\\to8$。无需知道 $f(1)$。"
+      }
+    ],
+    "answer": "$8$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $\\lim_{x\\to1}\\frac{f(x)-8}{x-1}=10$, find $\\lim_{x\\to1}f(x)$.",
+      "steps": [
+        {
+          "title": "Rewrite the unknown function",
+          "body": "In a punctured neighborhood with $x\\ne1$, $f(x)-8=\\frac{f(x)-8}{x-1}(x-1)$, so $f(x)=8+\\frac{f(x)-8}{x-1}(x-1)$."
+        },
+        {
+          "title": "Take the product limit, then add the constant",
+          "body": "The given quotient has the finite limit $10$, while $x-1\\to0$. The product law gives $f(x)-8\\to10\\cdot0=0$, and the sum law then gives $f(x)\\to8$. The value $f(1)$ is unnecessary."
+        }
+      ],
+      "answer": "$8$."
+    }
+  },
+  {
+    "number": 58,
+    "prompt": "若 $\\lim_{x\\to0}\\frac{f(x)}{x^2}=5$，求：(a) $\\lim_{x\\to0}f(x)$；(b) $\\lim_{x\\to0}\\frac{f(x)}x$。",
+    "concept": "limit-laws",
+    "steps": [
+      {
+        "title": "重写 $f(x)$ (a)",
+        "body": "当 $x\\ne0$ 时，$f(x)=\\frac{f(x)}{x^2}\\,x^2$。由积定律，$\\lim_{x\\to0}f(x)=5\\cdot0=0$。"
+      },
+      {
+        "title": "重写另一个商 (b)",
+        "body": "当 $x\\ne0$ 时，$\\frac{f(x)}x=\\frac{f(x)}{x^2}\\,x$。两个因子都有有限极限，因此 $\\lim_{x\\to0}\\frac{f(x)}x=5\\cdot0=0$。"
+      }
+    ],
+    "answer": "(a) $0$；(b) $0$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $\\lim_{x\\to0}\\frac{f(x)}{x^2}=5$, find the following limits: (a) $\\lim_{x\\to0}f(x)$; (b) $\\lim_{x\\to0}\\frac{f(x)}x$.",
+      "steps": [
+        {
+          "title": "Rewrite $f(x)$ (a)",
+          "body": "For $x\\ne0$, $f(x)=\\frac{f(x)}{x^2}\\,x^2$. The product law gives $\\lim_{x\\to0}f(x)=5\\cdot0=0$."
+        },
+        {
+          "title": "Rewrite the other quotient (b)",
+          "body": "For $x\\ne0$, $\\frac{f(x)}x=\\frac{f(x)}{x^2}\\,x$. Both factors have finite limits, so $\\lim_{x\\to0}\\frac{f(x)}x=5\\cdot0=0$."
+        }
+      ],
+      "answer": "(a) $0$; (b) $0$."
+    },
+    "subpartIds": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "number": 59,
+    "prompt": "设 $f(x)=x^2$（$x$ 为有理数），$f(x)=0$（$x$ 为无理数）。证明 $\\lim_{x\\to0}f(x)=0$。",
+    "concept": "squeeze",
+    "steps": [
+      {
+        "title": "对两种数统一建立界",
+        "body": "有理数处 $f(x)=x^2\\ge0$；无理数处 $f(x)=0\\le x^2$。因此无论 $x$ 属于哪一种数，都有 $0\\le f(x)\\le x^2$。"
+      },
+      {
+        "title": "使用夹逼定理",
+        "body": "当 $x\\to0$ 时，常数下界 $0$ 与上界 $x^2$ 都趋于 $0$，故 $f(x)$ 的极限为 $0$。"
+      }
+    ],
+    "answer": "$\\lim_{x\\to0}f(x)=0$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "If $f(x)=x^2$ if $x$ is rational and $f(x)=0$ if $x$ is irrational, prove that $\\lim_{x\\to0}f(x)=0$.",
+      "steps": [
+        {
+          "title": "Use bounds valid for both kinds of numbers",
+          "body": "At rational numbers, $f(x)=x^2\\ge0$. At irrational numbers, $f(x)=0\\le x^2$. Thus $0\\le f(x)\\le x^2$ for every real $x$, regardless of its type."
+        },
+        {
+          "title": "Apply the Squeeze Theorem",
+          "body": "As $x\\to0$, the constant lower bound $0$ and the upper bound $x^2$ both tend to $0$. Therefore $f(x)$ has limit $0$."
+        }
+      ],
+      "answer": "$\\lim_{x\\to0}f(x)=0$."
+    }
+  },
+  {
+    "number": 60,
+    "prompt": "举例说明：即使 $\\lim_{x\\to a}f(x)$ 与 $\\lim_{x\\to a}g(x)$ 都不存在，$\\lim_{x\\to a}[f(x)+g(x)]$ 仍可能存在。",
+    "concept": [
+      "limit-laws",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "选择相反的跳跃函数",
+        "body": "取 $a=0$，令 $f(x)=\\operatorname{sgn}x$，$g(x)=-\\operatorname{sgn}x$。两者在 $0$ 处也定义为 $0$。"
+      },
+      {
+        "title": "验证两个单独极限不存在",
+        "body": "$f$ 的左、右极限分别为 $-1,1$；$g$ 的左、右极限分别为 $1,-1$。因此两者的双侧极限都不存在。"
+      },
+      {
+        "title": "验证和的极限",
+        "body": "对所有 $x$，$f(x)+g(x)=0$，所以和的极限为 $0$。和的极限定律需要两个单独极限存在；本例说明其逆命题不成立。"
+      }
+    ],
+    "answer": "例如 $a=0$、$f=\\operatorname{sgn}x$、$g=-\\operatorname{sgn}x$；各自极限不存在，但和的极限为 $0$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Show by means of an example that $\\lim_{x\\to a}[f(x)+g(x)]$ may exist even though neither $\\lim_{x\\to a}f(x)$ nor $\\lim_{x\\to a}g(x)$ exists.",
+      "steps": [
+        {
+          "title": "Choose opposite jump functions",
+          "body": "Take $a=0$, $f(x)=\\operatorname{sgn}x$, and $g(x)=-\\operatorname{sgn}x$. Define both values at $0$ to be $0$."
+        },
+        {
+          "title": "Check the individual limits",
+          "body": "The left and right limits of $f$ are $-1$ and $1$, while those of $g$ are $1$ and $-1$. Thus neither function has a two-sided limit."
+        },
+        {
+          "title": "Check the sum limit",
+          "body": "For every $x$, $f(x)+g(x)=0$, so the sum has limit $0$. The sum law assumes the individual limits exist; this example shows that its converse fails."
+        }
+      ],
+      "answer": "For example, take $a=0$, $f=\\operatorname{sgn}x$, and $g=-\\operatorname{sgn}x$. Neither individual limit exists, but the sum has limit $0$."
+    }
+  },
+  {
+    "number": 61,
+    "prompt": "举例说明：即使 $\\lim_{x\\to a}f(x)$ 与 $\\lim_{x\\to a}g(x)$ 都不存在，$\\lim_{x\\to a}[f(x)g(x)]$ 仍可能存在。",
+    "concept": [
+      "limit-laws",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "选择同一个符号函数",
+        "body": "取 $a=0$，令 $f(x)=g(x)=\\operatorname{sgn}x$。当 $x<0$ 时二者均为 $-1$；当 $x>0$ 时二者均为 $1$。"
+      },
+      {
+        "title": "验证个体与乘积",
+        "body": "每个函数的左右极限不同，故均无双侧极限。然而对 $x\\ne0$，$f(x)g(x)=(\\operatorname{sgn}x)^2=1$，故乘积极限为 $1$。原点乘积值为 $0$ 不影响极限。"
+      }
+    ],
+    "answer": "例如 $a=0$、$f=g=\\operatorname{sgn}x$；各自极限不存在，但乘积极限为 $1$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Show by means of an example that $\\lim_{x\\to a}[f(x)g(x)]$ may exist even though neither $\\lim_{x\\to a}f(x)$ nor $\\lim_{x\\to a}g(x)$ exists.",
+      "steps": [
+        {
+          "title": "Choose the same sign function twice",
+          "body": "Take $a=0$ and $f(x)=g(x)=\\operatorname{sgn}x$. Both equal $-1$ for $x<0$ and $1$ for $x>0$."
+        },
+        {
+          "title": "Check the factors and product",
+          "body": "Each function has different one-sided limits, so neither has a two-sided limit. However, for $x\\ne0$, $f(x)g(x)=(\\operatorname{sgn}x)^2=1$, so the product limit is $1$. The product value $0$ at the origin does not affect that limit."
+        }
+      ],
+      "answer": "For example, take $a=0$ and $f=g=\\operatorname{sgn}x$. Neither individual limit exists, but their product has limit $1$."
+    }
+  },
+  {
+    "number": 62,
+    "prompt": "求 $\\lim_{x\\to2}\\frac{\\sqrt{6-x}-2}{\\sqrt{3-x}-1}$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "识别 $0/0$ 并对两个根式有理化",
+        "body": "直接代入得 $0/0$。在 $x\\le3$ 且 $x\\ne2$ 的邻域内，$\\sqrt{6-x}-2=\\frac{2-x}{\\sqrt{6-x}+2}$，$\\sqrt{3-x}-1=\\frac{2-x}{\\sqrt{3-x}+1}$。"
+      },
+      {
+        "title": "相除并约去共同因子",
+        "body": "所以 $\\frac{\\sqrt{6-x}-2}{\\sqrt{3-x}-1}=\\frac{2-x}{\\sqrt{6-x}+2}\\cdot\\frac{\\sqrt{3-x}+1}{2-x}=\\frac{\\sqrt{3-x}+1}{\\sqrt{6-x}+2}$。约分只用于 $x\\ne2$。"
+      },
+      {
+        "title": "代入化简后的式子",
+        "body": "新分母趋于 $\\sqrt4+2=4\\ne0$，因此极限为 $(\\sqrt1+1)/(\\sqrt4+2)=2/4=1/2$。"
+      }
+    ],
+    "answer": "$1/2$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Evaluate $\\lim_{x\\to2}\\frac{\\sqrt{6-x}-2}{\\sqrt{3-x}-1}$.",
+      "steps": [
+        {
+          "title": "Identify $0/0$ and rationalize both differences",
+          "body": "Direct substitution gives $0/0$. In a neighborhood with $x\\le3$ and $x\\ne2$, $\\sqrt{6-x}-2=\\frac{2-x}{\\sqrt{6-x}+2}$ and $\\sqrt{3-x}-1=\\frac{2-x}{\\sqrt{3-x}+1}$."
+        },
+        {
+          "title": "Divide and cancel the common factor",
+          "body": "Thus $\\frac{\\sqrt{6-x}-2}{\\sqrt{3-x}-1}=\\frac{2-x}{\\sqrt{6-x}+2}\\cdot\\frac{\\sqrt{3-x}+1}{2-x}=\\frac{\\sqrt{3-x}+1}{\\sqrt{6-x}+2}$. The cancellation is used only for $x\\ne2$."
+        },
+        {
+          "title": "Substitute into the simplified expression",
+          "body": "The new denominator tends to $\\sqrt4+2=4\\ne0$. Hence the limit is $(\\sqrt1+1)/(\\sqrt4+2)=2/4=1/2$."
+        }
+      ],
+      "answer": "$1/2$."
+    }
+  },
+  {
+    "number": 63,
+    "prompt": "是否存在数 $a$，使 $\\lim_{x\\to-2}\\frac{3x^2+ax+a+3}{x^2+x-2}$ 存在？若存在，求 $a$ 与极限值。",
+    "concept": [
+      "cancellation",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "建立必要条件",
+        "body": "分母为 $(x+2)(x-1)$，当 $x\\to-2$ 时趋零。若商有有限极限，则分子作为商与分母的乘积也必须趋零。分子极限为 $12-2a+a+3=15-a$，故必须 $a=15$。"
+      },
+      {
+        "title": "验证条件足够",
+        "body": "当 $a=15$ 时，分子 $3x^2+15x+18=3(x+2)(x+3)$。在 $-2$ 附近且 $x\\ne-2$（邻域选为不包含 $1$）时，原式化为 $3(x+3)/(x-1)$，其分母在 $-2$ 处非零。"
+      },
+      {
+        "title": "求极限并说明唯一性",
+        "body": "代入得 $3(-2+3)/(-2-1)=-1$。必要条件只给出一个 $a$，且已验证该值有效，因此 $a=15$ 是唯一答案。"
+      }
+    ],
+    "answer": "存在，唯一为 $a=15$，此时极限为 $-1$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "Is there a number $a$ such that $\\lim_{x\\to-2}\\frac{3x^2+ax+a+3}{x^2+x-2}$ exists? If so, find the value of $a$ and the value of the limit.",
+      "steps": [
+        {
+          "title": "Derive a necessary condition",
+          "body": "The denominator is $(x+2)(x-1)$ and tends to zero as $x\\to-2$. If the quotient has a finite limit, its numerator, as the quotient times the denominator, must also tend to zero. The numerator limit is $12-2a+a+3=15-a$, so $a=15$ is necessary."
+        },
+        {
+          "title": "Verify that the condition is sufficient",
+          "body": "For $a=15$, the numerator is $3x^2+15x+18=3(x+2)(x+3)$. For $x\\ne-2$ in a neighborhood of $-2$ chosen to exclude $1$, the quotient becomes $3(x+3)/(x-1)$, whose denominator is nonzero at $-2$."
+        },
+        {
+          "title": "Evaluate the limit and establish uniqueness",
+          "body": "Substitution gives $3(-2+3)/(-2-1)=-1$. The necessary condition yields only one value of $a$, and it has been verified, so $a=15$ is the unique answer."
+        }
+      ],
+      "answer": "Yes: uniquely $a=15$, and the limit is $-1$."
+    }
+  },
+  {
+    "number": 64,
+    "prompt": "图中固定圆 $C_1$ 的方程为 $(x-1)^2+y^2=1$；圆 $C_2$ 以原点为圆心、半径为 $r$，并不断缩小。$P=(0,r)$，$Q$ 为两圆上方的交点，$R$ 为直线 $PQ$ 与 $x$ 轴的交点。当 $C_2$ 缩小，即 $r\\to0^+$ 时，$R$ 会怎样变化？",
+    "concept": [
+      "rationalization",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "联立两圆方程确定 $Q$",
+        "body": "$C_2$ 满足 $x^2+y^2=r^2$；展开 $C_1$ 得 $x^2+y^2=2x$。联立得 $x_Q=r^2/2$。代回 $C_2$ 且选择正的 $y$，有 $y_Q=r\\sqrt{1-r^2/4}$。在 $0<r<2$ 时，上方交点存在，故 $P=(0,r)$、$Q=(r^2/2,r\\sqrt{1-r^2/4})$。"
+      },
+      {
+        "title": "求直线斜率与截距",
+        "body": "设 $s=\\sqrt{1-r^2/4}$。直线 $PQ$ 的斜率为 $m=(rs-r)/(r^2/2)=2(s-1)/r<0$，其方程为 $y=r+mx$。令 $y=0$，得 $x_R=-r/m=r^2/[2(1-s)]$，所以 $R=(r^2/[2(1-s)],0)$。"
+      },
+      {
+        "title": "有理化截距表达式",
+        "body": "乘以共轭，$x_R=\\frac{r^2(1+s)}{2(1-s^2)}$。因 $1-s^2=r^2/4$ 且 $r>0$，可约去 $r^2$，得到 $x_R=2(1+\\sqrt{1-r^2/4})$。"
+      },
+      {
+        "title": "取 $r\\to0^+$ 并解释位置",
+        "body": "因此 $\\lim_{r\\to0^+}x_R=2(1+1)=4$，纵坐标始终为 $0$。当 $r$ 缩小时，根号增大，$x_R$ 从小于 $4$ 的位置增大趋近 $4$；所以 $R$ 沿 $x$ 轴趋向 $(4,0)$，而不是原点。"
+      }
+    ],
+    "answer": "$R=(2(1+\\sqrt{1-r^2/4}),0)\\to(4,0)$，$r\\to0^+$。",
+    "printedPage": 108,
+    "pdfPage": 140,
+    "en": {
+      "prompt": "The figure shows a fixed circle $C_1$ with equation $(x-1)^2+y^2=1$ and a shrinking circle $C_2$ with radius $r$ and center the origin. $P$ is the point $(0,r)$, $Q$ is the upper point of intersection of the two circles, and $R$ is the point of intersection of the line $PQ$ and the $x$-axis. What happens to $R$ as $C_2$ shrinks, that is, as $r\\to0^+$?",
+      "steps": [
+        {
+          "title": "Find $Q$ from the two circle equations",
+          "body": "$C_2$ has equation $x^2+y^2=r^2$, and expanding $C_1$ gives $x^2+y^2=2x$. Hence $x_Q=r^2/2$. Substitution into $C_2$, taking the positive $y$, gives $y_Q=r\\sqrt{1-r^2/4}$. For $0<r<2$ the upper intersection exists, so $P=(0,r)$ and $Q=(r^2/2,r\\sqrt{1-r^2/4})$."
+        },
+        {
+          "title": "Find the slope and intercept",
+          "body": "Let $s=\\sqrt{1-r^2/4}$. The slope of $PQ$ is $m=(rs-r)/(r^2/2)=2(s-1)/r<0$, and its equation is $y=r+mx$. Setting $y=0$ gives $x_R=-r/m=r^2/[2(1-s)]$, so $R=(r^2/[2(1-s)],0)$."
+        },
+        {
+          "title": "Rationalize the intercept",
+          "body": "Multiply by the conjugate to obtain $x_R=\\frac{r^2(1+s)}{2(1-s^2)}$. Since $1-s^2=r^2/4$ and $r>0$, cancellation gives $x_R=2(1+\\sqrt{1-r^2/4})$."
+        },
+        {
+          "title": "Take $r\\to0^+$ and interpret the position",
+          "body": "Thus $\\lim_{r\\to0^+}x_R=2(1+1)=4$, while the vertical coordinate remains $0$. As $r$ decreases, the square root increases and $x_R$ approaches $4$ from below. Hence $R$ moves along the $x$-axis toward $(4,0)$ rather than the origin."
+        }
+      ],
+      "answer": "$R=(2(1+\\sqrt{1-r^2/4}),0)\\to(4,0)$ as $r\\to0^+$."
+    },
+    "sourceImage": "assets/exercise-64.png"
+  }
+]

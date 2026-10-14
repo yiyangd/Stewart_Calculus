@@ -1,0 +1,15 @@
+使用项目内 workflow/textbook-study-site/SKILL.md，继续制作 Stewart Calculus 第 2.3 节“Calculating Limits Using the Limit Laws”。当前项目已有两本本地 PDF：
+1. James Stewart Calculus Early Transcendentals, 7th Edition 2012.pdf（原教材）
+2. Stewart-7E-solutions.pdf（参考答案）
+
+先读本项目 project-docs/precalc-reference-audit.md、workflow/README.md 及技能 references/stewart-project.md。沿用 Precal11 的中英双语学习体验：奶油底、深青主色、左侧知识点目录、方法与易错点、原例题分步解析、节后题完整题库。默认英语，中文可切换；例题展开、习题收起、保存独立学习进度与支持打印。
+
+优先完整完成教材第 2.3 节。先核对实际起止页、印刷页、全部正文例题、全部节后习题和每道小问及原图，保存独立 coverage。本节知识点数量由实际方法决定，覆盖极限法则条件、直接代入、约去共同因子、分式整理与共轭有理化、分段/绝对值与单侧极限、夹逼等实际存在的内容；不要为凑固定数量加原文没有的例题。教材无配套 Practice 就记 0。
+
+每道 Example 按主要方法归入一个知识点。逐例题对应真实 Exercises，分别说明同型方法、综合运用和拓展；给出可点击的题号和一句方法理由。对应关系是教学整理，除非原书明确指定，不称教材官方配套。每道 Exercise 在全站只显示一个原题条目，但可关联多个知识点和例题。
+
+原题保持教材给出的表达式、条件和全部小问。每题独立给出具体动作、变形、运算和结论；因式分解、乘共轭或约分后的定义域限制不能省略。特别区分函数值和极限、0/0 与极限值、双侧与单侧极限；商法则核对分母极限非零。夹逼题写出两端的不等式与共同极限，图题保留给定原图。
+
+先独立推导，再按参考答案的对应节号/题号/原式核对。答案书只有简答时补足过程；缺题、版本不一致、原文错误或不清楚的图留具体记录。英文题干与教材核对，中文与英文等价。完成独立数学和来源复审、coverage/结构检查、内嵌与独立 JSON 同步及浏览器验收。
+
+数据用 course.json 与 content/，网站用 site/，审核与例题映射存 project-docs/。已有章节或审核结果从已完成部分继续，避免重复。用户指定 GitHub 仓库是 https://github.com/yiyangd/Stewart_Calculus，发布操作按当前会话授权与实际工具完成；未确认部署前不称线上完成。最终报告本地/线上入口、实际知识点/例题/习题数量和具体未完成事项。

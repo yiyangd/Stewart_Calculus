@@ -1,0 +1,1476 @@
+[
+  {
+    "number": 1,
+    "prompt": "已知 $\\lim_{x\\to2}f(x)=4$，$\\lim_{x\\to2}g(x)=-2$，$\\lim_{x\\to2}h(x)=0$。求存在的极限；若极限不存在，说明原因。(a) $\\lim_{x\\to2}[f(x)+5g(x)]$；(b) $\\lim_{x\\to2}[g(x)]^3$；(c) $\\lim_{x\\to2}\\sqrt{f(x)}$；(d) $\\lim_{x\\to2}\\frac{3f(x)}{g(x)}$；(e) $\\lim_{x\\to2}\\frac{g(x)}{h(x)}$；(f) $\\lim_{x\\to2}\\frac{g(x)h(x)}{f(x)}$。",
+    "concept": "limit-laws",
+    "steps": [
+      {
+        "title": "(a) 和与常数倍法则",
+        "body": "$\\lim[f+5g]=\\lim f+5\\lim g=4+5(-2)=-6$。"
+      },
+      {
+        "title": "(b) 幂法则",
+        "body": "$\\lim[g(x)]^3=(\\lim g)^3=(-2)^3=-8$。"
+      },
+      {
+        "title": "(c) 根式法则",
+        "body": "因为 $f(x)\\to4>0$，在足够靠近 $2$ 时根式有定义；$\\lim\\sqrt{f(x)}=\\sqrt{4}=2$。"
+      },
+      {
+        "title": "(d) 商法则",
+        "body": "分母极限为 $-2\\ne0$，所以 $\\lim\\frac{3f}{g}=\\frac{3\\cdot4}{-2}=-6$。"
+      },
+      {
+        "title": "(e) 检查零分母",
+        "body": "分子趋于非零数 $-2$，分母趋于 $0$，商法则不适用。在商有定义且趋近点的地方，$|g/h|$ 无界，因此没有有限极限。"
+      },
+      {
+        "title": "(e) 不猜测无穷方向",
+        "body": "若 $h(x)=(x-2)^2$，商趋于 $-\\infty$；若 $h(x)=-(x-2)^2$，商趋于 $+\\infty$；若 $h(x)=x-2$，两侧方向相反。三种情形都符合已知极限，故不能给出唯一无穷方向。"
+      },
+      {
+        "title": "(f) 先乘后除",
+        "body": "分母极限 $4\\ne0$，于是 $\\lim\\frac{gh}{f}=\\frac{(\\lim g)(\\lim h)}{\\lim f}=\\frac{(-2)\\cdot0}{4}=0$。"
+      }
+    ],
+    "answer": "(a) $-6$；(b) $-8$；(c) $2$；(d) $-6$；(e) 不存在有限极限，给定条件不足以确定是 $+\\infty$、$-\\infty$ 或左右行为不同；(f) $0$。",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Given that $\\lim_{x\\to2}f(x)=4$, $\\lim_{x\\to2}g(x)=-2$, and $\\lim_{x\\to2}h(x)=0$, find the limits that exist. If the limit does not exist, explain why. (a) $\\lim_{x\\to2}[f(x)+5g(x)]$; (b) $\\lim_{x\\to2}[g(x)]^3$; (c) $\\lim_{x\\to2}\\sqrt{f(x)}$; (d) $\\lim_{x\\to2}\\frac{3f(x)}{g(x)}$; (e) $\\lim_{x\\to2}\\frac{g(x)}{h(x)}$; (f) $\\lim_{x\\to2}\\frac{g(x)h(x)}{f(x)}$.",
+      "steps": [
+        {
+          "title": "(a) Sum and constant multiple laws",
+          "body": "$\\lim[f+5g]=\\lim f+5\\lim g=4+5(-2)=-6$."
+        },
+        {
+          "title": "(b) Power law",
+          "body": "$\\lim[g(x)]^3=(\\lim g)^3=(-2)^3=-8$."
+        },
+        {
+          "title": "(c) Root law",
+          "body": "Because $f(x)\\to4>0$, the square root is defined sufficiently near $2$; $\\lim\\sqrt{f(x)}=\\sqrt{4}=2$."
+        },
+        {
+          "title": "(d) Quotient law",
+          "body": "The denominator limit is $-2\\ne0$, so $\\lim\\frac{3f}{g}=\\frac{3\\cdot4}{-2}=-6$."
+        },
+        {
+          "title": "(e) Check the zero denominator",
+          "body": "The numerator tends to the nonzero number $-2$ while the denominator tends to $0$, so the quotient law does not apply. Wherever the quotient is defined while approaching the point, $|g/h|$ is unbounded, so no finite limit exists."
+        },
+        {
+          "title": "(e) Do not infer an infinity sign",
+          "body": "If $h(x)=(x-2)^2$, the quotient tends to $-\\infty$; if $h(x)=-(x-2)^2$, it tends to $+\\infty$; if $h(x)=x-2$, the sides have opposite signs. All three satisfy the given limits, so no unique infinity sign follows."
+        },
+        {
+          "title": "(f) Multiply, then divide",
+          "body": "The denominator limit is $4\\ne0$, so $\\lim\\frac{gh}{f}=\\frac{(\\lim g)(\\lim h)}{\\lim f}=\\frac{(-2)\\cdot0}{4}=0$."
+        }
+      ],
+      "answer": "(a) $-6$; (b) $-8$; (c) $2$; (d) $-6$; (e) No finite limit exists; the given information does not determine $+\\infty$, $-\\infty$, or different behavior on the two sides; (f) $0$."
+    },
+    "subpartIds": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ]
+  },
+  {
+    "number": 2,
+    "prompt": "给出 $f$ 和 $g$ 的图像。利用图像求下列极限（若存在）；若不存在，说明原因。(a) $\\lim_{x\\to2}[f(x)+g(x)]$；(b) $\\lim_{x\\to1}[f(x)+g(x)]$；(c) $\\lim_{x\\to0}[f(x)g(x)]$；(d) $\\lim_{x\\to-1}\\frac{f(x)}{g(x)}$；(e) $\\lim_{x\\to2}[x^3f(x)]$；(f) $\\lim_{x\\to1}\\sqrt{3+f(x)}$。",
+    "concept": [
+      "limit-laws",
+      "one-sided"
+    ],
+    "steps": [
+      {
+        "title": "(a) 读取靠近 $2$ 的高度",
+        "body": "图中 $f$ 在 $(2,2)$ 处是空心点，故 $\\lim_{x\\to2}f(x)=2$，即使 $f(2)=1$。同时 $\\lim_{x\\to2}g(x)=0$。和法则给出 $2+0=2$。"
+      },
+      {
+        "title": "(b) 读取左右极限",
+        "body": "$f$ 在 $x=1$ 两侧均趋于 $1$；$g$ 从左趋于 $2$，从右趋于 $1$。因此和从左趋于 $1+2=3$，从右趋于 $1+1=2$。"
+      },
+      {
+        "title": "(b) 比较两侧",
+        "body": "$3\\ne2$，所以 $\\lim_{x\\to1}[f(x)+g(x)]$ 不存在。"
+      },
+      {
+        "title": "(c) 使用乘积法则",
+        "body": "图中 $f(x)\\to0$，而 $g(x)$ 在 $x=0$ 附近趋于一个有限高度 $L$。不必猜测该高度的精确值：$\\lim_{x\\to0}fg=0\\cdot L=0$。"
+      },
+      {
+        "title": "(d) 读取分子与分母符号",
+        "body": "在 $x=-1$ 附近，$f(x)\\to-1$，$g(x)\\to0$。从左看 $g(x)<0$，因此 $f/g\\to+\\infty$；从右看 $g(x)>0$，因此 $f/g\\to-\\infty$。"
+      },
+      {
+        "title": "(d) 得出双侧结论",
+        "body": "两个方向不同，所以 $\\lim_{x\\to-1}f(x)/g(x)$ 不存在。"
+      },
+      {
+        "title": "(e) 使用幂与乘积法则",
+        "body": "$\\lim_{x\\to2}x^3=2^3=8$，$\\lim_{x\\to2}f(x)=2$，因此 $\\lim_{x\\to2}x^3f(x)=8\\cdot2=16$。"
+      },
+      {
+        "title": "(f) 使用和与根式法则",
+        "body": "$\\lim_{x\\to1}f(x)=1$，根号内趋于 $3+1=4>0$；故极限为 $\\sqrt4=2$。"
+      }
+    ],
+    "answer": "(a) $2$；(b) 不存在（左极限 $3$，右极限 $2$）；(c) $0$；(d) 不存在（左极限 $+\\infty$，右极限 $-\\infty$）；(e) $16$；(f) $2$。",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "The graphs of $f$ and $g$ are given. Use them to evaluate each limit, if it exists. If the limit does not exist, explain why. (a) $\\lim_{x\\to2}[f(x)+g(x)]$; (b) $\\lim_{x\\to1}[f(x)+g(x)]$; (c) $\\lim_{x\\to0}[f(x)g(x)]$; (d) $\\lim_{x\\to-1}\\frac{f(x)}{g(x)}$; (e) $\\lim_{x\\to2}[x^3f(x)]$; (f) $\\lim_{x\\to1}\\sqrt{3+f(x)}$.",
+      "steps": [
+        {
+          "title": "(a) Read heights near $2$",
+          "body": "The open point of $f$ is $(2,2)$, so $\\lim_{x\\to2}f(x)=2$, even though $f(2)=1$. Also $\\lim_{x\\to2}g(x)=0$. The sum law gives $2+0=2$."
+        },
+        {
+          "title": "(b) Read the one-sided limits",
+          "body": "$f$ tends to $1$ from both sides at $x=1$; $g$ tends to $2$ from the left and $1$ from the right. Thus the sum tends to $1+2=3$ from the left and $1+1=2$ from the right."
+        },
+        {
+          "title": "(b) Compare the sides",
+          "body": "Since $3\\ne2$, $\\lim_{x\\to1}[f(x)+g(x)]$ does not exist."
+        },
+        {
+          "title": "(c) Apply the product law",
+          "body": "The graph shows $f(x)\\to0$ and $g(x)$ approaching a finite height $L$ near $x=0$. Its exact height need not be guessed: $\\lim_{x\\to0}fg=0\\cdot L=0$."
+        },
+        {
+          "title": "(d) Read numerator and denominator signs",
+          "body": "Near $x=-1$, $f(x)\\to-1$ and $g(x)\\to0$. On the left $g(x)<0$, so $f/g\\to+\\infty$; on the right $g(x)>0$, so $f/g\\to-\\infty$."
+        },
+        {
+          "title": "(d) Conclude about the two-sided limit",
+          "body": "The sides have different behavior, so $\\lim_{x\\to-1}f(x)/g(x)$ does not exist."
+        },
+        {
+          "title": "(e) Apply power and product laws",
+          "body": "$\\lim_{x\\to2}x^3=2^3=8$ and $\\lim_{x\\to2}f(x)=2$, so $\\lim_{x\\to2}x^3f(x)=8\\cdot2=16$."
+        },
+        {
+          "title": "(f) Apply sum and root laws",
+          "body": "$\\lim_{x\\to1}f(x)=1$ and the radicand tends to $3+1=4>0$; the limit is $\\sqrt4=2$."
+        }
+      ],
+      "answer": "(a) $2$; (b) Does not exist (left limit $3$, right limit $2$); (c) $0$; (d) Does not exist (left limit $+\\infty$, right limit $-\\infty$); (e) $16$; (f) $2$."
+    },
+    "subpartIds": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f"
+    ],
+    "sourceImage": "assets/exercise-2.png"
+  },
+  {
+    "number": 3,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{x\\to3}(5x^3-3x^2+x-6)$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "拆开和与差",
+        "body": "和、差及常数倍法则给出 $5\\lim x^3-3\\lim x^2+\\lim x-\\lim6$（均为 $x\\to3$）。"
+      },
+      {
+        "title": "使用幂、恒等与常数法则",
+        "body": "$\\lim x=3$，$\\lim x^3=3^3$，$\\lim x^2=3^2$，$\\lim6=6$。"
+      },
+      {
+        "title": "计算",
+        "body": "$5(27)-3(9)+3-6=135-27+3-6=105$。"
+      }
+    ],
+    "answer": "$105$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{x\\to3}(5x^3-3x^2+x-6)$.",
+      "steps": [
+        {
+          "title": "Separate the sum and difference",
+          "body": "The sum, difference, and constant multiple laws give $5\\lim x^3-3\\lim x^2+\\lim x-\\lim6$ (all as $x\\to3$)."
+        },
+        {
+          "title": "Apply power, identity, and constant laws",
+          "body": "$\\lim x=3$, $\\lim x^3=3^3$, $\\lim x^2=3^2$, and $\\lim6=6$."
+        },
+        {
+          "title": "Calculate",
+          "body": "$5(27)-3(9)+3-6=135-27+3-6=105$."
+        }
+      ],
+      "answer": "$105$"
+    }
+  },
+  {
+    "number": 4,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{x\\to-1}(x^4-3x)(x^2+5x+3)$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "应用乘积法则",
+        "body": "极限等于 $[\\lim(x^4-3x)][\\lim(x^2+5x+3)]$。"
+      },
+      {
+        "title": "逐项代入",
+        "body": "由和、差、常数倍、幂与恒等法则，第一因子趋于 $(-1)^4-3(-1)=4$；第二因子趋于 $(-1)^2+5(-1)+3=-1$。"
+      },
+      {
+        "title": "相乘",
+        "body": "$4(-1)=-4$。"
+      }
+    ],
+    "answer": "$-4$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{x\\to-1}(x^4-3x)(x^2+5x+3)$.",
+      "steps": [
+        {
+          "title": "Apply the product law",
+          "body": "The limit is $[\\lim(x^4-3x)][\\lim(x^2+5x+3)]$."
+        },
+        {
+          "title": "Evaluate term by term",
+          "body": "The sum, difference, constant multiple, power, and identity laws give $(-1)^4-3(-1)=4$ for the first factor and $(-1)^2+5(-1)+3=-1$ for the second."
+        },
+        {
+          "title": "Multiply",
+          "body": "$4(-1)=-4$."
+        }
+      ],
+      "answer": "$-4$"
+    }
+  },
+  {
+    "number": 5,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{t\\to-2}\\frac{t^4-2}{2t^2-3t+2}$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "求分子与分母的极限",
+        "body": "由和、差、常数倍与幂法则，分子趋于 $(-2)^4-2=14$，分母趋于 $2(-2)^2-3(-2)+2=16$。"
+      },
+      {
+        "title": "检查商法则的条件",
+        "body": "$16\\ne0$，所以可使用商法则。"
+      },
+      {
+        "title": "约分",
+        "body": "极限 $=14/16=7/8$。"
+      }
+    ],
+    "answer": "$\\frac78$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{t\\to-2}\\frac{t^4-2}{2t^2-3t+2}$.",
+      "steps": [
+        {
+          "title": "Find numerator and denominator limits",
+          "body": "The sum, difference, constant multiple, and power laws give $(-2)^4-2=14$ for the numerator and $2(-2)^2-3(-2)+2=16$ for the denominator."
+        },
+        {
+          "title": "Check the quotient law condition",
+          "body": "Since $16\\ne0$, the quotient law applies."
+        },
+        {
+          "title": "Reduce the fraction",
+          "body": "The limit is $14/16=7/8$."
+        }
+      ],
+      "answer": "$\\frac78$"
+    }
+  },
+  {
+    "number": 6,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{u\\to-2}\\sqrt{u^4+3u+6}$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "求根号内极限",
+        "body": "由幂、常数倍与和法则，$u^4+3u+6\\to(-2)^4+3(-2)+6=16$。"
+      },
+      {
+        "title": "检查根式条件",
+        "body": "根号内极限为正数 $16$，所以在 $-2$ 附近根式有定义，可用根式法则。"
+      },
+      {
+        "title": "开平方",
+        "body": "极限 $=\\sqrt{16}=4$。"
+      }
+    ],
+    "answer": "$4$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{u\\to-2}\\sqrt{u^4+3u+6}$.",
+      "steps": [
+        {
+          "title": "Find the radicand limit",
+          "body": "The power, constant multiple, and sum laws give $u^4+3u+6\\to(-2)^4+3(-2)+6=16$."
+        },
+        {
+          "title": "Check the root law condition",
+          "body": "The radicand limit is the positive number $16$, so the square root is defined near $-2$ and the root law applies."
+        },
+        {
+          "title": "Take the square root",
+          "body": "The limit is $\\sqrt{16}=4$."
+        }
+      ],
+      "answer": "$4$"
+    }
+  },
+  {
+    "number": 7,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{x\\to8}(1+\\sqrt[3]{x})(2-6x^2+x^3)$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "第一因子",
+        "body": "由和、常数、恒等与根式法则，$1+\\sqrt[3]{x}\\to1+\\sqrt[3]{8}=3$。"
+      },
+      {
+        "title": "第二因子",
+        "body": "由和、差、常数倍与幂法则，$2-6x^2+x^3\\to2-6(64)+512=130$。"
+      },
+      {
+        "title": "乘积法则",
+        "body": "极限 $=3\\cdot130=390$。"
+      }
+    ],
+    "answer": "$390$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{x\\to8}(1+\\sqrt[3]{x})(2-6x^2+x^3)$.",
+      "steps": [
+        {
+          "title": "First factor",
+          "body": "The sum, constant, identity, and root laws give $1+\\sqrt[3]{x}\\to1+\\sqrt[3]{8}=3$."
+        },
+        {
+          "title": "Second factor",
+          "body": "The sum, difference, constant multiple, and power laws give $2-6x^2+x^3\\to2-6(64)+512=130$."
+        },
+        {
+          "title": "Product law",
+          "body": "The limit is $3\\cdot130=390$."
+        }
+      ],
+      "answer": "$390$"
+    }
+  },
+  {
+    "number": 8,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{t\\to2}\\left(\\frac{t^2-2}{t^3-3t+5}\\right)^2$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "分子和分母",
+        "body": "由和、差、常数倍与幂法则，$t^2-2\\to4-2=2$，$t^3-3t+5\\to8-6+5=7$。"
+      },
+      {
+        "title": "商法则",
+        "body": "因为 $7\\ne0$，分式的极限为 $2/7$。"
+      },
+      {
+        "title": "幂法则",
+        "body": "整个平方的极限为 $(2/7)^2=4/49$。"
+      }
+    ],
+    "answer": "$\\frac4{49}$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{t\\to2}\\left(\\frac{t^2-2}{t^3-3t+5}\\right)^2$.",
+      "steps": [
+        {
+          "title": "Numerator and denominator",
+          "body": "The sum, difference, constant multiple, and power laws give $t^2-2\\to4-2=2$ and $t^3-3t+5\\to8-6+5=7$."
+        },
+        {
+          "title": "Quotient law",
+          "body": "Because $7\\ne0$, the quotient limit is $2/7$."
+        },
+        {
+          "title": "Power law",
+          "body": "The limit of the square is $(2/7)^2=4/49$."
+        }
+      ],
+      "answer": "$\\frac4{49}$"
+    }
+  },
+  {
+    "number": 9,
+    "prompt": "计算极限，并指出每一步所用的相应极限法则：$\\lim_{x\\to2}\\sqrt{\\frac{2x^2+1}{3x-2}}$。",
+    "concept": [
+      "substitution",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "分子和分母",
+        "body": "由和、差、常数倍与幂法则，$2x^2+1\\to2(4)+1=9$，$3x-2\\to6-2=4$。"
+      },
+      {
+        "title": "商法则",
+        "body": "$4\\ne0$，所以根号内分式趋于 $9/4>0$。"
+      },
+      {
+        "title": "根式法则",
+        "body": "根号内在 $2$ 附近为正，故极限 $=\\sqrt{9/4}=3/2$。"
+      }
+    ],
+    "answer": "$\\frac32$",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "Evaluate the limit and justify each step by indicating the appropriate Limit Law(s): $\\lim_{x\\to2}\\sqrt{\\frac{2x^2+1}{3x-2}}$.",
+      "steps": [
+        {
+          "title": "Numerator and denominator",
+          "body": "The sum, difference, constant multiple, and power laws give $2x^2+1\\to2(4)+1=9$ and $3x-2\\to6-2=4$."
+        },
+        {
+          "title": "Quotient law",
+          "body": "Since $4\\ne0$, the quotient inside the square root tends to $9/4>0$."
+        },
+        {
+          "title": "Root law",
+          "body": "The radicand is positive near $2$, so the limit is $\\sqrt{9/4}=3/2$."
+        }
+      ],
+      "answer": "$\\frac32$"
+    }
+  },
+  {
+    "number": 10,
+    "prompt": "(a) 下式有什么问题？$\\frac{x^2+x-6}{x-2}=x+3$。(b) 根据(a)，解释为什么 $\\lim_{x\\to2}\\frac{x^2+x-6}{x-2}=\\lim_{x\\to2}(x+3)$ 是正确的。",
+    "concept": [
+      "cancellation",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "(a) 因式分解并检查定义域",
+        "body": "$x^2+x-6=(x+3)(x-2)$。只有 $x\\ne2$ 时，才能约去分母 $x-2$；在 $x=2$ 左式是无定义的 $0/0$，而右式为 $5$。"
+      },
+      {
+        "title": "(b) 使用去心邻域相等的性质",
+        "body": "求极限时考察靠近但不等于 $2$ 的 $x$。这些 $x$ 均满足 $\\frac{x^2+x-6}{x-2}=x+3$，故两边极限相同。"
+      },
+      {
+        "title": "(b) 计算公共极限",
+        "body": "$\\lim_{x\\to2}(x+3)=2+3=5$。"
+      }
+    ],
+    "answer": "(a) 缺少限制 $x\\ne2$；左侧在 $x=2$ 无定义，右侧有定义。(b) 两式在 $2$ 的去心邻域相等，所以极限相等，均为 $5$。",
+    "printedPage": 106,
+    "pdfPage": 138,
+    "en": {
+      "prompt": "(a) What is wrong with the following equation? $\\frac{x^2+x-6}{x-2}=x+3$. (b) In view of part (a), explain why the equation $\\lim_{x\\to2}\\frac{x^2+x-6}{x-2}=\\lim_{x\\to2}(x+3)$ is correct.",
+      "steps": [
+        {
+          "title": "(a) Factor and check the domain",
+          "body": "$x^2+x-6=(x+3)(x-2)$. The factor $x-2$ can be canceled only when $x\\ne2$; at $x=2$ the left side is undefined as $0/0$, whereas the right side equals $5$."
+        },
+        {
+          "title": "(b) Use equality on a punctured neighborhood",
+          "body": "A limit considers values of $x$ near, but not equal to, $2$. At all these values $\\frac{x^2+x-6}{x-2}=x+3$, so the limits agree."
+        },
+        {
+          "title": "(b) Find the common limit",
+          "body": "$\\lim_{x\\to2}(x+3)=2+3=5$."
+        }
+      ],
+      "answer": "(a) The restriction $x\\ne2$ is missing; the left side is undefined at $x=2$, while the right side is defined. (b) They agree on a punctured neighborhood of $2$, so their limits agree and both equal $5$."
+    },
+    "subpartIds": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "number": 11,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to5}\\frac{x^2-6x+5}{x-5}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "识别不定式",
+        "body": "直接代入得到 $0/0$，需先化简。"
+      },
+      {
+        "title": "因式分解并约去",
+        "body": "$x^2-6x+5=(x-5)(x-1)$。对 $x\\ne5$，原分式等于 $x-1$。"
+      },
+      {
+        "title": "求化简后的极限",
+        "body": "$\\lim_{x\\to5}(x-1)=5-1=4$。"
+      }
+    ],
+    "answer": "$4$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to5}\\frac{x^2-6x+5}{x-5}$.",
+      "steps": [
+        {
+          "title": "Identify the indeterminate form",
+          "body": "Direct substitution gives $0/0$, so simplify first."
+        },
+        {
+          "title": "Factor and cancel",
+          "body": "$x^2-6x+5=(x-5)(x-1)$. For $x\\ne5$, the quotient equals $x-1$."
+        },
+        {
+          "title": "Evaluate the simplified limit",
+          "body": "$\\lim_{x\\to5}(x-1)=5-1=4$."
+        }
+      ],
+      "answer": "$4$"
+    }
+  },
+  {
+    "number": 12,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to4}\\frac{x^2-4x}{x^2-3x-4}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "识别不定式",
+        "body": "在 $x=4$ 分子和分母都为 $0$。"
+      },
+      {
+        "title": "分解并约去共同因子",
+        "body": "$x^2-4x=x(x-4)$，$x^2-3x-4=(x-4)(x+1)$。对 $x\\ne4,-1$，分式等于 $x/(x+1)$。"
+      },
+      {
+        "title": "代入",
+        "body": "$\\lim_{x\\to4}\\frac{x}{x+1}=\\frac4{4+1}=\\frac45$；新的分母极限 $5\\ne0$。"
+      }
+    ],
+    "answer": "$\\frac45$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to4}\\frac{x^2-4x}{x^2-3x-4}$.",
+      "steps": [
+        {
+          "title": "Identify the indeterminate form",
+          "body": "At $x=4$, both numerator and denominator are $0$."
+        },
+        {
+          "title": "Factor and cancel the common factor",
+          "body": "$x^2-4x=x(x-4)$ and $x^2-3x-4=(x-4)(x+1)$. For $x\\ne4,-1$, the quotient equals $x/(x+1)$."
+        },
+        {
+          "title": "Substitute",
+          "body": "$\\lim_{x\\to4}\\frac{x}{x+1}=\\frac4{4+1}=\\frac45$; the new denominator limit is $5\\ne0$."
+        }
+      ],
+      "answer": "$\\frac45$"
+    }
+  },
+  {
+    "number": 13,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to5}\\frac{x^2-5x+6}{x-5}$。",
+    "concept": [
+      "one-sided",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "检查分子",
+        "body": "$x^2-5x+6\\to25-25+6=6>0$，所以在 $5$ 附近分子为正且不趋于 $0$。"
+      },
+      {
+        "title": "从左侧趋近",
+        "body": "$x\\to5^-$ 时，$x-5\\to0^-$，正的非零分子除以负的小数使分式趋于 $-\\infty$。"
+      },
+      {
+        "title": "从右侧趋近并比较",
+        "body": "$x\\to5^+$ 时，$x-5\\to0^+$，分式趋于 $+\\infty$。两侧不同，因此双侧极限不存在。"
+      }
+    ],
+    "answer": "不存在；左极限为 $-\\infty$，右极限为 $+\\infty$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to5}\\frac{x^2-5x+6}{x-5}$.",
+      "steps": [
+        {
+          "title": "Check the numerator",
+          "body": "$x^2-5x+6\\to25-25+6=6>0$, so the numerator is positive near $5$ and does not tend to $0$."
+        },
+        {
+          "title": "Approach from the left",
+          "body": "As $x\\to5^-$, $x-5\\to0^-$; a positive nonzero numerator divided by a small negative denominator tends to $-\\infty$."
+        },
+        {
+          "title": "Approach from the right and compare",
+          "body": "As $x\\to5^+$, $x-5\\to0^+$ and the quotient tends to $+\\infty$. The sides differ, so the two-sided limit does not exist."
+        }
+      ],
+      "answer": "Does not exist; the left limit is $-\\infty$ and the right limit is $+\\infty$."
+    }
+  },
+  {
+    "number": 14,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-1}\\frac{x^2-4x}{x^2-3x-4}$。",
+    "concept": [
+      "one-sided",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "分解并检查分子",
+        "body": "原分式为 $\\frac{x(x-4)}{(x-4)(x+1)}=\\frac{x}{x+1}$（$x\\ne4,-1$）。在 $x\\to-1$ 时分子趋于 $-1\\ne0$。"
+      },
+      {
+        "title": "左侧符号",
+        "body": "$x\\to-1^-$ 时，$x<0$ 且 $x+1\\to0^-$，所以 $x/(x+1)\\to+\\infty$。"
+      },
+      {
+        "title": "右侧符号与结论",
+        "body": "$x\\to-1^+$ 时，$x<0$ 且 $x+1\\to0^+$，所以 $x/(x+1)\\to-\\infty$。两侧不同，双侧极限不存在。"
+      }
+    ],
+    "answer": "不存在；左极限为 $+\\infty$，右极限为 $-\\infty$。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-1}\\frac{x^2-4x}{x^2-3x-4}$.",
+      "steps": [
+        {
+          "title": "Factor and check the numerator",
+          "body": "The quotient is $\\frac{x(x-4)}{(x-4)(x+1)}=\\frac{x}{x+1}$ for $x\\ne4,-1$. As $x\\to-1$, the numerator tends to $-1\\ne0$."
+        },
+        {
+          "title": "Signs on the left",
+          "body": "As $x\\to-1^-$, $x<0$ and $x+1\\to0^-$, so $x/(x+1)\\to+\\infty$."
+        },
+        {
+          "title": "Signs on the right and conclusion",
+          "body": "As $x\\to-1^+$, $x<0$ and $x+1\\to0^+$, so $x/(x+1)\\to-\\infty$. The sides differ and the two-sided limit does not exist."
+        }
+      ],
+      "answer": "Does not exist; the left limit is $+\\infty$ and the right limit is $-\\infty$."
+    }
+  },
+  {
+    "number": 15,
+    "prompt": "计算极限（若存在）：$\\lim_{t\\to-3}\\frac{t^2-9}{2t^2+7t+3}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "因式分解",
+        "body": "$t^2-9=(t-3)(t+3)$，$2t^2+7t+3=(2t+1)(t+3)$；直接代入为 $0/0$。"
+      },
+      {
+        "title": "约去共同因子",
+        "body": "对 $t\\ne-3,-1/2$，分式等于 $(t-3)/(2t+1)$。"
+      },
+      {
+        "title": "代入化简式",
+        "body": "$\\frac{-3-3}{2(-3)+1}=\\frac{-6}{-5}=\\frac65$；新分母不为 $0$。"
+      }
+    ],
+    "answer": "$\\frac65$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{t\\to-3}\\frac{t^2-9}{2t^2+7t+3}$.",
+      "steps": [
+        {
+          "title": "Factor",
+          "body": "$t^2-9=(t-3)(t+3)$ and $2t^2+7t+3=(2t+1)(t+3)$; direct substitution gives $0/0$."
+        },
+        {
+          "title": "Cancel the common factor",
+          "body": "For $t\\ne-3,-1/2$, the quotient equals $(t-3)/(2t+1)$."
+        },
+        {
+          "title": "Substitute into the simplified expression",
+          "body": "$\\frac{-3-3}{2(-3)+1}=\\frac{-6}{-5}=\\frac65$; the new denominator is nonzero."
+        }
+      ],
+      "answer": "$\\frac65$"
+    }
+  },
+  {
+    "number": 16,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-1}\\frac{2x^2+3x+1}{x^2-2x-3}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "因式分解",
+        "body": "$2x^2+3x+1=(2x+1)(x+1)$，$x^2-2x-3=(x-3)(x+1)$。"
+      },
+      {
+        "title": "约去共同因子",
+        "body": "对 $x\\ne-1,3$，分式等于 $(2x+1)/(x-3)$。"
+      },
+      {
+        "title": "代入",
+        "body": "$\\frac{2(-1)+1}{-1-3}=\\frac{-1}{-4}=\\frac14$。"
+      }
+    ],
+    "answer": "$\\frac14$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-1}\\frac{2x^2+3x+1}{x^2-2x-3}$.",
+      "steps": [
+        {
+          "title": "Factor",
+          "body": "$2x^2+3x+1=(2x+1)(x+1)$ and $x^2-2x-3=(x-3)(x+1)$."
+        },
+        {
+          "title": "Cancel the common factor",
+          "body": "For $x\\ne-1,3$, the quotient equals $(2x+1)/(x-3)$."
+        },
+        {
+          "title": "Substitute",
+          "body": "$\\frac{2(-1)+1}{-1-3}=\\frac{-1}{-4}=\\frac14$."
+        }
+      ],
+      "answer": "$\\frac14$"
+    }
+  },
+  {
+    "number": 17,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{(-5+h)^2-25}{h}$。",
+    "concept": [
+      "difference-quotients",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "展开平方",
+        "body": "$(-5+h)^2=25-10h+h^2$，故分子为 $-10h+h^2$。"
+      },
+      {
+        "title": "提取并约去 $h$",
+        "body": "对 $h\\ne0$，$\\frac{-10h+h^2}{h}=\\frac{h(-10+h)}h=-10+h$。"
+      },
+      {
+        "title": "求极限",
+        "body": "$\\lim_{h\\to0}(-10+h)=-10+0=-10$。"
+      }
+    ],
+    "answer": "$-10$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{(-5+h)^2-25}{h}$.",
+      "steps": [
+        {
+          "title": "Expand the square",
+          "body": "$(-5+h)^2=25-10h+h^2$, so the numerator is $-10h+h^2$."
+        },
+        {
+          "title": "Factor and cancel $h$",
+          "body": "For $h\\ne0$, $\\frac{-10h+h^2}{h}=\\frac{h(-10+h)}h=-10+h$."
+        },
+        {
+          "title": "Take the limit",
+          "body": "$\\lim_{h\\to0}(-10+h)=-10+0=-10$."
+        }
+      ],
+      "answer": "$-10$"
+    }
+  },
+  {
+    "number": 18,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{(2+h)^3-8}{h}$。",
+    "concept": [
+      "difference-quotients",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "展开立方",
+        "body": "$(2+h)^3=8+12h+6h^2+h^3$，减去 $8$ 后为 $12h+6h^2+h^3$。"
+      },
+      {
+        "title": "约去 $h$",
+        "body": "对 $h\\ne0$，$\\frac{h(12+6h+h^2)}h=12+6h+h^2$。"
+      },
+      {
+        "title": "代入 $h=0$",
+        "body": "极限为 $12+6(0)+0^2=12$。"
+      }
+    ],
+    "answer": "$12$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{(2+h)^3-8}{h}$.",
+      "steps": [
+        {
+          "title": "Expand the cube",
+          "body": "$(2+h)^3=8+12h+6h^2+h^3$, and subtracting $8$ leaves $12h+6h^2+h^3$."
+        },
+        {
+          "title": "Cancel $h$",
+          "body": "For $h\\ne0$, $\\frac{h(12+6h+h^2)}h=12+6h+h^2$."
+        },
+        {
+          "title": "Substitute $h=0$",
+          "body": "The limit is $12+6(0)+0^2=12$."
+        }
+      ],
+      "answer": "$12$"
+    }
+  },
+  {
+    "number": 19,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-2}\\frac{x+2}{x^3+8}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "分解立方和",
+        "body": "$x^3+8=(x+2)(x^2-2x+4)$；代入原式得到 $0/0$。"
+      },
+      {
+        "title": "约去 $x+2$",
+        "body": "对 $x\\ne-2$，分式等于 $1/(x^2-2x+4)$。"
+      },
+      {
+        "title": "求极限",
+        "body": "$\\frac1{(-2)^2-2(-2)+4}=\\frac1{4+4+4}=\\frac1{12}$。"
+      }
+    ],
+    "answer": "$\\frac1{12}$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-2}\\frac{x+2}{x^3+8}$.",
+      "steps": [
+        {
+          "title": "Factor the sum of cubes",
+          "body": "$x^3+8=(x+2)(x^2-2x+4)$; substitution into the original expression gives $0/0$."
+        },
+        {
+          "title": "Cancel $x+2$",
+          "body": "For $x\\ne-2$, the quotient equals $1/(x^2-2x+4)$."
+        },
+        {
+          "title": "Take the limit",
+          "body": "$\\frac1{(-2)^2-2(-2)+4}=\\frac1{4+4+4}=\\frac1{12}$."
+        }
+      ],
+      "answer": "$\\frac1{12}$"
+    }
+  },
+  {
+    "number": 20,
+    "prompt": "计算极限（若存在）：$\\lim_{t\\to1}\\frac{t^4-1}{t^3-1}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "因式分解",
+        "body": "$t^4-1=(t-1)(t+1)(t^2+1)$，$t^3-1=(t-1)(t^2+t+1)$。"
+      },
+      {
+        "title": "约去共同因子",
+        "body": "对 $t\\ne1$，原分式等于 $\\frac{(t+1)(t^2+1)}{t^2+t+1}$。"
+      },
+      {
+        "title": "代入",
+        "body": "极限为 $\\frac{(1+1)(1+1)}{1+1+1}=\\frac43$。"
+      }
+    ],
+    "answer": "$\\frac43$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{t\\to1}\\frac{t^4-1}{t^3-1}$.",
+      "steps": [
+        {
+          "title": "Factor",
+          "body": "$t^4-1=(t-1)(t+1)(t^2+1)$ and $t^3-1=(t-1)(t^2+t+1)$."
+        },
+        {
+          "title": "Cancel the common factor",
+          "body": "For $t\\ne1$, the quotient equals $\\frac{(t+1)(t^2+1)}{t^2+t+1}$."
+        },
+        {
+          "title": "Substitute",
+          "body": "The limit is $\\frac{(1+1)(1+1)}{1+1+1}=\\frac43$."
+        }
+      ],
+      "answer": "$\\frac43$"
+    }
+  },
+  {
+    "number": 21,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{\\sqrt{9+h}-3}{h}$。",
+    "concept": [
+      "rationalization",
+      "difference-quotients"
+    ],
+    "steps": [
+      {
+        "title": "乘以共轭",
+        "body": "在 $h$ 近 $0$ 且 $h\\ne0$ 时，$\\frac{\\sqrt{9+h}-3}{h}\\cdot\\frac{\\sqrt{9+h}+3}{\\sqrt{9+h}+3}=\\frac{(9+h)-9}{h(\\sqrt{9+h}+3)}$。"
+      },
+      {
+        "title": "约去 $h$",
+        "body": "分子为 $h$，约去后得到 $1/(\\sqrt{9+h}+3)$。"
+      },
+      {
+        "title": "代入",
+        "body": "$\\frac1{\\sqrt9+3}=\\frac1{3+3}=\\frac16$。"
+      }
+    ],
+    "answer": "$\\frac16$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{\\sqrt{9+h}-3}{h}$.",
+      "steps": [
+        {
+          "title": "Multiply by the conjugate",
+          "body": "For $h$ near $0$ with $h\\ne0$, $\\frac{\\sqrt{9+h}-3}{h}\\cdot\\frac{\\sqrt{9+h}+3}{\\sqrt{9+h}+3}=\\frac{(9+h)-9}{h(\\sqrt{9+h}+3)}$."
+        },
+        {
+          "title": "Cancel $h$",
+          "body": "The numerator is $h$; cancellation gives $1/(\\sqrt{9+h}+3)$."
+        },
+        {
+          "title": "Substitute",
+          "body": "$\\frac1{\\sqrt9+3}=\\frac1{3+3}=\\frac16$."
+        }
+      ],
+      "answer": "$\\frac16$"
+    }
+  },
+  {
+    "number": 22,
+    "prompt": "计算极限（若存在）：$\\lim_{u\\to2}\\frac{\\sqrt{4u+1}-3}{u-2}$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "分子有理化",
+        "body": "乘以 $\\frac{\\sqrt{4u+1}+3}{\\sqrt{4u+1}+3}$，得 $\\frac{4u+1-9}{(u-2)(\\sqrt{4u+1}+3)}$。"
+      },
+      {
+        "title": "提取并约去因子",
+        "body": "$4u+1-9=4(u-2)$，所以对 $u\\ne2$ 且 $u$ 近 $2$，分式等于 $4/(\\sqrt{4u+1}+3)$。"
+      },
+      {
+        "title": "求极限",
+        "body": "$\\frac4{\\sqrt{4(2)+1}+3}=\\frac4{3+3}=\\frac23$。"
+      }
+    ],
+    "answer": "$\\frac23$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{u\\to2}\\frac{\\sqrt{4u+1}-3}{u-2}$.",
+      "steps": [
+        {
+          "title": "Rationalize the numerator",
+          "body": "Multiply by $\\frac{\\sqrt{4u+1}+3}{\\sqrt{4u+1}+3}$ to obtain $\\frac{4u+1-9}{(u-2)(\\sqrt{4u+1}+3)}$."
+        },
+        {
+          "title": "Factor and cancel",
+          "body": "$4u+1-9=4(u-2)$, so for $u\\ne2$ near $2$, the quotient equals $4/(\\sqrt{4u+1}+3)$."
+        },
+        {
+          "title": "Take the limit",
+          "body": "$\\frac4{\\sqrt{4(2)+1}+3}=\\frac4{3+3}=\\frac23$."
+        }
+      ],
+      "answer": "$\\frac23$"
+    }
+  },
+  {
+    "number": 23,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-4}\\frac{\\frac14+\\frac1x}{4+x}$。",
+    "concept": [
+      "cancellation",
+      "difference-quotients"
+    ],
+    "steps": [
+      {
+        "title": "通分分子",
+        "body": "对 $x\\ne0$，$\\frac14+\\frac1x=\\frac{x+4}{4x}$。"
+      },
+      {
+        "title": "约去因子",
+        "body": "原式等于 $\\frac{x+4}{4x(x+4)}=\\frac1{4x}$（$x\\ne0,-4$）。"
+      },
+      {
+        "title": "代入",
+        "body": "$\\lim_{x\\to-4}\\frac1{4x}=\\frac1{4(-4)}=-\\frac1{16}$。"
+      }
+    ],
+    "answer": "$-\\frac1{16}$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-4}\\frac{\\frac14+\\frac1x}{4+x}$.",
+      "steps": [
+        {
+          "title": "Combine the numerator fractions",
+          "body": "For $x\\ne0$, $\\frac14+\\frac1x=\\frac{x+4}{4x}$."
+        },
+        {
+          "title": "Cancel the factor",
+          "body": "The expression equals $\\frac{x+4}{4x(x+4)}=\\frac1{4x}$ for $x\\ne0,-4$."
+        },
+        {
+          "title": "Substitute",
+          "body": "$\\lim_{x\\to-4}\\frac1{4x}=\\frac1{4(-4)}=-\\frac1{16}$."
+        }
+      ],
+      "answer": "$-\\frac1{16}$"
+    }
+  },
+  {
+    "number": 24,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-1}\\frac{x^2+2x+1}{x^4-1}$。",
+    "concept": [
+      "cancellation",
+      "substitution"
+    ],
+    "steps": [
+      {
+        "title": "完全因式分解",
+        "body": "$x^2+2x+1=(x+1)^2$，$x^4-1=(x^2+1)(x+1)(x-1)$。"
+      },
+      {
+        "title": "只约去一个共同因子",
+        "body": "对 $x\\ne-1,1$，分式等于 $\\frac{x+1}{(x^2+1)(x-1)}$；分子还保留一个 $x+1$。"
+      },
+      {
+        "title": "代入",
+        "body": "新分母趋于 $(1+1)(-1-1)=-4\\ne0$，所以极限 $=0/(-4)=0$。"
+      }
+    ],
+    "answer": "$0$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-1}\\frac{x^2+2x+1}{x^4-1}$.",
+      "steps": [
+        {
+          "title": "Factor completely",
+          "body": "$x^2+2x+1=(x+1)^2$ and $x^4-1=(x^2+1)(x+1)(x-1)$."
+        },
+        {
+          "title": "Cancel only one common factor",
+          "body": "For $x\\ne-1,1$, the quotient equals $\\frac{x+1}{(x^2+1)(x-1)}$; one factor $x+1$ remains in the numerator."
+        },
+        {
+          "title": "Substitute",
+          "body": "The new denominator tends to $(1+1)(-1-1)=-4\\ne0$, so the limit is $0/(-4)=0$."
+        }
+      ],
+      "answer": "$0$"
+    }
+  },
+  {
+    "number": 25,
+    "prompt": "计算极限（若存在）：$\\lim_{t\\to0}\\frac{\\sqrt{1+t}-\\sqrt{1-t}}{t}$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "使用共轭",
+        "body": "当 $t$ 近 $0$ 且 $t\\ne0$，乘以 $\\frac{\\sqrt{1+t}+\\sqrt{1-t}}{\\sqrt{1+t}+\\sqrt{1-t}}$，分子成为 $(1+t)-(1-t)=2t$。"
+      },
+      {
+        "title": "约去 $t$",
+        "body": "得到 $\\frac2{\\sqrt{1+t}+\\sqrt{1-t}}$。原根式定义域为 $-1\\le t\\le1$，足以从两侧趋近 $0$。"
+      },
+      {
+        "title": "代入",
+        "body": "极限为 $\\frac2{\\sqrt1+\\sqrt1}=2/2=1$。"
+      }
+    ],
+    "answer": "$1$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{t\\to0}\\frac{\\sqrt{1+t}-\\sqrt{1-t}}{t}$.",
+      "steps": [
+        {
+          "title": "Use the conjugate",
+          "body": "For $t$ near $0$ with $t\\ne0$, multiply by $\\frac{\\sqrt{1+t}+\\sqrt{1-t}}{\\sqrt{1+t}+\\sqrt{1-t}}$; the numerator becomes $(1+t)-(1-t)=2t$."
+        },
+        {
+          "title": "Cancel $t$",
+          "body": "This gives $\\frac2{\\sqrt{1+t}+\\sqrt{1-t}}$. The original square roots have domain $-1\\le t\\le1$, which allows approach to $0$ from both sides."
+        },
+        {
+          "title": "Substitute",
+          "body": "The limit is $\\frac2{\\sqrt1+\\sqrt1}=2/2=1$."
+        }
+      ],
+      "answer": "$1$"
+    }
+  },
+  {
+    "number": 26,
+    "prompt": "计算极限（若存在）：$\\lim_{t\\to0}\\left(\\frac1t-\\frac1{t^2+t}\\right)$。",
+    "concept": [
+      "cancellation",
+      "limit-laws"
+    ],
+    "steps": [
+      {
+        "title": "分解分母后通分",
+        "body": "$t^2+t=t(t+1)$。对 $t\\ne0,-1$，$\\frac1t-\\frac1{t(t+1)}=\\frac{t+1-1}{t(t+1)}$。"
+      },
+      {
+        "title": "约去 $t$",
+        "body": "分子为 $t$，故表达式等于 $1/(t+1)$。不能把原来的两个无界项分别相减求极限。"
+      },
+      {
+        "title": "求极限",
+        "body": "$\\lim_{t\\to0}\\frac1{t+1}=1/(0+1)=1$。"
+      }
+    ],
+    "answer": "$1$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{t\\to0}\\left(\\frac1t-\\frac1{t^2+t}\\right)$.",
+      "steps": [
+        {
+          "title": "Factor the denominator and combine fractions",
+          "body": "$t^2+t=t(t+1)$. For $t\\ne0,-1$, $\\frac1t-\\frac1{t(t+1)}=\\frac{t+1-1}{t(t+1)}$."
+        },
+        {
+          "title": "Cancel $t$",
+          "body": "The numerator is $t$, so the expression equals $1/(t+1)$. The original unbounded terms cannot be evaluated separately and subtracted."
+        },
+        {
+          "title": "Take the limit",
+          "body": "$\\lim_{t\\to0}\\frac1{t+1}=1/(0+1)=1$."
+        }
+      ],
+      "answer": "$1$"
+    }
+  },
+  {
+    "number": 27,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to16}\\frac{4-\\sqrt{x}}{16x-x^2}$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "有理化分子",
+        "body": "乘以 $\\frac{4+\\sqrt{x}}{4+\\sqrt{x}}$ 得 $\\frac{16-x}{(16x-x^2)(4+\\sqrt{x})}$。"
+      },
+      {
+        "title": "分解并约去",
+        "body": "$16x-x^2=x(16-x)$。对 $x>0$ 且 $x\\ne16$，表达式等于 $1/[x(4+\\sqrt{x})]$。"
+      },
+      {
+        "title": "代入",
+        "body": "极限 $=\\frac1{16(4+4)}=\\frac1{128}$。"
+      }
+    ],
+    "answer": "$\\frac1{128}$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to16}\\frac{4-\\sqrt{x}}{16x-x^2}$.",
+      "steps": [
+        {
+          "title": "Rationalize the numerator",
+          "body": "Multiplication by $\\frac{4+\\sqrt{x}}{4+\\sqrt{x}}$ gives $\\frac{16-x}{(16x-x^2)(4+\\sqrt{x})}$."
+        },
+        {
+          "title": "Factor and cancel",
+          "body": "$16x-x^2=x(16-x)$. For $x>0$ with $x\\ne16$, the expression equals $1/[x(4+\\sqrt{x})]$."
+        },
+        {
+          "title": "Substitute",
+          "body": "The limit is $\\frac1{16(4+4)}=\\frac1{128}$."
+        }
+      ],
+      "answer": "$\\frac1{128}$"
+    }
+  },
+  {
+    "number": 28,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{(3+h)^{-1}-3^{-1}}h$。",
+    "concept": [
+      "difference-quotients",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "改写负指数并通分",
+        "body": "$\\frac1{3+h}-\\frac13=\\frac{3-(3+h)}{3(3+h)}=\\frac{-h}{3(3+h)}$，其中 $h\\ne-3$。"
+      },
+      {
+        "title": "除以 $h$ 并约去",
+        "body": "对 $h\\ne0,-3$，原式等于 $-1/[3(3+h)]$。"
+      },
+      {
+        "title": "求极限",
+        "body": "$-\\frac1{3(3+0)}=-\\frac19$。"
+      }
+    ],
+    "answer": "$-\\frac19$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{(3+h)^{-1}-3^{-1}}h$.",
+      "steps": [
+        {
+          "title": "Rewrite negative powers and combine fractions",
+          "body": "$\\frac1{3+h}-\\frac13=\\frac{3-(3+h)}{3(3+h)}=\\frac{-h}{3(3+h)}$, with $h\\ne-3$."
+        },
+        {
+          "title": "Divide by $h$ and cancel",
+          "body": "For $h\\ne0,-3$, the original expression equals $-1/[3(3+h)]$."
+        },
+        {
+          "title": "Take the limit",
+          "body": "$-\\frac1{3(3+0)}=-\\frac19$."
+        }
+      ],
+      "answer": "$-\\frac19$"
+    }
+  },
+  {
+    "number": 29,
+    "prompt": "计算极限（若存在）：$\\lim_{t\\to0}\\left(\\frac1{t\\sqrt{1+t}}-\\frac1t\\right)$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "合并分式",
+        "body": "对 $t>-1$ 且 $t\\ne0$，表达式等于 $\\frac{1-\\sqrt{1+t}}{t\\sqrt{1+t}}$。"
+      },
+      {
+        "title": "分子有理化",
+        "body": "乘以 $\\frac{1+\\sqrt{1+t}}{1+\\sqrt{1+t}}$，分子为 $1-(1+t)=-t$；得到 $\\frac{-t}{t\\sqrt{1+t}(1+\\sqrt{1+t})}$。"
+      },
+      {
+        "title": "约去并代入",
+        "body": "约去 $t$ 后为 $\\frac{-1}{\\sqrt{1+t}(1+\\sqrt{1+t})}$，极限为 $-1/[1(1+1)]=-1/2$。"
+      }
+    ],
+    "answer": "$-\\frac12$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{t\\to0}\\left(\\frac1{t\\sqrt{1+t}}-\\frac1t\\right)$.",
+      "steps": [
+        {
+          "title": "Combine the fractions",
+          "body": "For $t>-1$ with $t\\ne0$, the expression equals $\\frac{1-\\sqrt{1+t}}{t\\sqrt{1+t}}$."
+        },
+        {
+          "title": "Rationalize the numerator",
+          "body": "Multiply by $\\frac{1+\\sqrt{1+t}}{1+\\sqrt{1+t}}$; the numerator is $1-(1+t)=-t$, giving $\\frac{-t}{t\\sqrt{1+t}(1+\\sqrt{1+t})}$."
+        },
+        {
+          "title": "Cancel and substitute",
+          "body": "Canceling $t$ gives $\\frac{-1}{\\sqrt{1+t}(1+\\sqrt{1+t})}$; its limit is $-1/[1(1+1)]=-1/2$."
+        }
+      ],
+      "answer": "$-\\frac12$"
+    }
+  },
+  {
+    "number": 30,
+    "prompt": "计算极限（若存在）：$\\lim_{x\\to-4}\\frac{\\sqrt{x^2+9}-5}{x+4}$。",
+    "concept": [
+      "rationalization",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "乘以共轭",
+        "body": "乘以 $\\frac{\\sqrt{x^2+9}+5}{\\sqrt{x^2+9}+5}$，得 $\\frac{x^2+9-25}{(x+4)(\\sqrt{x^2+9}+5)}$。"
+      },
+      {
+        "title": "因式分解并约去",
+        "body": "$x^2+9-25=x^2-16=(x+4)(x-4)$。对 $x\\ne-4$，原式等于 $\\frac{x-4}{\\sqrt{x^2+9}+5}$。"
+      },
+      {
+        "title": "代入",
+        "body": "$\\frac{-4-4}{\\sqrt{16+9}+5}=\\frac{-8}{10}=-\\frac45$。"
+      }
+    ],
+    "answer": "$-\\frac45$",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{x\\to-4}\\frac{\\sqrt{x^2+9}-5}{x+4}$.",
+      "steps": [
+        {
+          "title": "Multiply by the conjugate",
+          "body": "Multiply by $\\frac{\\sqrt{x^2+9}+5}{\\sqrt{x^2+9}+5}$ to obtain $\\frac{x^2+9-25}{(x+4)(\\sqrt{x^2+9}+5)}$."
+        },
+        {
+          "title": "Factor and cancel",
+          "body": "$x^2+9-25=x^2-16=(x+4)(x-4)$. For $x\\ne-4$, the expression equals $\\frac{x-4}{\\sqrt{x^2+9}+5}$."
+        },
+        {
+          "title": "Substitute",
+          "body": "$\\frac{-4-4}{\\sqrt{16+9}+5}=\\frac{-8}{10}=-\\frac45$."
+        }
+      ],
+      "answer": "$-\\frac45$"
+    }
+  },
+  {
+    "number": 31,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{(x+h)^3-x^3}{h}$。",
+    "concept": [
+      "difference-quotients",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "把 $x$ 视为常数，展开",
+        "body": "$(x+h)^3=x^3+3x^2h+3xh^2+h^3$，减去 $x^3$ 得 $3x^2h+3xh^2+h^3$。"
+      },
+      {
+        "title": "约去 $h$",
+        "body": "对 $h\\ne0$，差商等于 $3x^2+3xh+h^2$。"
+      },
+      {
+        "title": "只令 $h$ 趋于 $0$",
+        "body": "由于 $x$ 固定，$3xh\\to0$，$h^2\\to0$；极限为 $3x^2$。"
+      }
+    ],
+    "answer": "$3x^2$（$x$ 为任意固定实数）。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{(x+h)^3-x^3}{h}$.",
+      "steps": [
+        {
+          "title": "Hold $x$ fixed and expand",
+          "body": "$(x+h)^3=x^3+3x^2h+3xh^2+h^3$; subtracting $x^3$ gives $3x^2h+3xh^2+h^3$."
+        },
+        {
+          "title": "Cancel $h$",
+          "body": "For $h\\ne0$, the difference quotient equals $3x^2+3xh+h^2$."
+        },
+        {
+          "title": "Let only $h$ tend to $0$",
+          "body": "Since $x$ is fixed, $3xh\\to0$ and $h^2\\to0$; the limit is $3x^2$."
+        }
+      ],
+      "answer": "$3x^2$, for any fixed real $x$."
+    }
+  },
+  {
+    "number": 32,
+    "prompt": "计算极限（若存在）：$\\lim_{h\\to0}\\frac{\\frac1{(x+h)^2}-\\frac1{x^2}}h$。",
+    "concept": [
+      "difference-quotients",
+      "cancellation"
+    ],
+    "steps": [
+      {
+        "title": "先说明定义域",
+        "body": "$x$ 固定且必须满足 $x\\ne0$；在足够小的去心邻域内取 $h\\ne0$ 且 $x+h\\ne0$。"
+      },
+      {
+        "title": "通分分子",
+        "body": "$\\frac1{(x+h)^2}-\\frac1{x^2}=\\frac{x^2-(x+h)^2}{x^2(x+h)^2}=\\frac{-2xh-h^2}{x^2(x+h)^2}$。"
+      },
+      {
+        "title": "除以 $h$ 并约去",
+        "body": "差商为 $\\frac{-h(2x+h)}{hx^2(x+h)^2}=-\\frac{2x+h}{x^2(x+h)^2}$。"
+      },
+      {
+        "title": "代入 $h=0$",
+        "body": "极限为 $-\\frac{2x}{x^2x^2}=-\\frac2{x^3}$。若 $x=0$，原题包含 $1/x^2$，无定义，不能使用此结果。"
+      }
+    ],
+    "answer": "$-\\frac2{x^3}$，其中 $x$ 是固定实数且 $x\\ne0$；$x=0$ 时原式无定义。",
+    "printedPage": 107,
+    "pdfPage": 139,
+    "en": {
+      "prompt": "Evaluate the limit, if it exists: $\\lim_{h\\to0}\\frac{\\frac1{(x+h)^2}-\\frac1{x^2}}h$.",
+      "steps": [
+        {
+          "title": "State the domain first",
+          "body": "$x$ is fixed and must satisfy $x\\ne0$; in a sufficiently small punctured neighborhood take $h\\ne0$ and $x+h\\ne0$."
+        },
+        {
+          "title": "Combine the numerator fractions",
+          "body": "$\\frac1{(x+h)^2}-\\frac1{x^2}=\\frac{x^2-(x+h)^2}{x^2(x+h)^2}=\\frac{-2xh-h^2}{x^2(x+h)^2}$."
+        },
+        {
+          "title": "Divide by $h$ and cancel",
+          "body": "The difference quotient is $\\frac{-h(2x+h)}{hx^2(x+h)^2}=-\\frac{2x+h}{x^2(x+h)^2}$."
+        },
+        {
+          "title": "Substitute $h=0$",
+          "body": "The limit is $-\\frac{2x}{x^2x^2}=-\\frac2{x^3}$. If $x=0$, the original question contains $1/x^2$ and is undefined, so this result does not apply."
+        }
+      ],
+      "answer": "$-\\frac2{x^3}$ for fixed real $x\\ne0$; the original expression is undefined when $x=0$."
+    }
+  }
+]

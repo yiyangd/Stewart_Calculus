@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "concepts": 8,
+  "examples": 11,
+  "exercises": 64,
+  "images": 18,
+  "checks": [
+    "English default",
+    "Chinese/English switching",
+    "open/filter state preserved",
+    "progress persisted",
+    "example exercise jump",
+    "home navigation language",
+    "all solutions expand",
+    "all images load",
+    "floor/cases/limits/tables render",
+    "390px mobile overflow",
+    "print media",
+    "no page errors"
+  ],
+  "errors": []
+}
