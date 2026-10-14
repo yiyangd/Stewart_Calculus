@@ -38,6 +38,22 @@
         "practice": 0,
         "exercises": 69
       }
+    },
+    {
+      "slug": "2-6",
+      "section": "2.6",
+      "title": "无穷远处的极限与水平渐近线",
+      "en": {
+        "title": "Limits at Infinity; Horizontal Asymptotes",
+        "chapter": "Chapter 2 · Limits and Derivatives"
+      },
+      "counts": {
+        "concepts": 8,
+        "examples": 14,
+        "practice": 0,
+        "exercises": 75
+      },
+      "chapter": "第 2 章 · 极限与导数"
     }
   ]
 }
