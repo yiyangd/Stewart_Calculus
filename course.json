@@ -22,6 +22,22 @@
         "exercises": 64
       },
       "chapter": "第 2 章 · 极限与导数"
+    },
+    {
+      "slug": "2-5",
+      "section": "2.5",
+      "title": "连续性",
+      "en": {
+        "title": "Continuity",
+        "chapter": "Chapter 2 · Limits and Derivatives"
+      },
+      "chapter": "第 2 章 · 极限与导数",
+      "counts": {
+        "concepts": 7,
+        "examples": 10,
+        "practice": 0,
+        "exercises": 69
+      }
     }
   ]
 }
